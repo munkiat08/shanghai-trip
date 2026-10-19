@@ -2043,6 +2043,94 @@
       "day": 3,
       "type": "餐厅",
       "near": "上海迪士尼乐园"
+    },
+    {
+      "name": "去茶山（兴业太古汇店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.462511%2C31.229794&name=%E5%8E%BB%E8%8C%B6%E5%B1%B1%EF%BC%88%E5%85%B4%E4%B8%9A%E5%A4%AA%E5%8F%A4%E6%B1%87%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E5%8E%BB%E8%8C%B6%E5%B1%B1%EF%BC%88%E5%85%B4%E4%B8%9A%E5%A4%AA%E5%8F%A4%E6%B1%87%E5%BA%97%EF%BC%89&type=51",
+      "dish": "奶茶、土豆片",
+      "note": "兴业太古汇地下一层的茶饮店，店里的土豆片也值得点；评分 4.6，人均约 ¥24，营业 07:30-23:00。",
+      "day": 2,
+      "type": "饮品",
+      "near": "静安寺"
+    },
+    {
+      "name": "Charlie Town 红茶（静安嘉里中心南区店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.450169%2C31.222957&name=Charlie+Town+%E7%BA%A2%E8%8C%B6%EF%BC%88%E9%9D%99%E5%AE%89%E5%98%89%E9%87%8C%E4%B8%AD%E5%BF%83%E5%8D%97%E5%8C%BA%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=Charlie+Town+%E7%BA%A2%E8%8C%B6%EF%BC%88%E9%9D%99%E5%AE%89%E5%98%89%E9%87%8C%E4%B8%AD%E5%BF%83%E5%8D%97%E5%8C%BA%E5%BA%97%EF%BC%89&type=51",
+      "dish": "红茶",
+      "note": "静安嘉里中心南区 B2 的红茶店；评分 4.7，营业 10:00-21:00。",
+      "day": 2,
+      "type": "饮品",
+      "near": "静安寺"
+    },
+    {
+      "name": "红楼 HONGLOU Gelato（静安嘉里中心店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.450007%2C31.222986&name=%E7%BA%A2%E6%A5%BC+HONGLOU+Gelato%EF%BC%88%E9%9D%99%E5%AE%89%E5%98%89%E9%87%8C%E4%B8%AD%E5%BF%83%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E7%BA%A2%E6%A5%BC+HONGLOU+Gelato%EF%BC%88%E9%9D%99%E5%AE%89%E5%98%89%E9%87%8C%E4%B8%AD%E5%BF%83%E5%BA%97%EF%BC%89&type=51",
+      "dish": "意式冰淇淋",
+      "note": "静安嘉里中心南区 B2 的意式冰淇淋；评分 4.6，人均约 ¥40，营业 10:00-22:00。",
+      "day": 2,
+      "type": "饮品",
+      "near": "静安寺"
+    },
+    {
+      "name": "阿嬷手作（兴业太古汇店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.463585%2C31.22774&name=%E9%98%BF%E5%AC%B7%E6%89%8B%E4%BD%9C%EF%BC%88%E5%85%B4%E4%B8%9A%E5%A4%AA%E5%8F%A4%E6%B1%87%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E9%98%BF%E5%AC%B7%E6%89%8B%E4%BD%9C%EF%BC%88%E5%85%B4%E4%B8%9A%E5%A4%AA%E5%8F%A4%E6%B1%87%E5%BA%97%EF%BC%89&type=51",
+      "dish": "手作茶饮",
+      "note": "兴业太古汇 LG1 层的手作茶饮；评分 4.5，人均约 ¥32，营业 10:00-22:00。",
+      "day": 2,
+      "type": "饮品",
+      "near": "静安寺"
+    },
+    {
+      "name": "三万昌（平江路 1 店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.633399%2C31.315897&name=%E4%B8%89%E4%B8%87%E6%98%8C%EF%BC%88%E5%B9%B3%E6%B1%9F%E8%B7%AF+1+%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E4%B8%89%E4%B8%87%E6%98%8C%EF%BC%88%E5%B9%B3%E6%B1%9F%E8%B7%AF+1+%E5%BA%97%EF%BC%89&type=51",
+      "dish": "茉莉碧螺春奶茶",
+      "note": "平江路 160 号的百年茶店，招牌是茉莉碧螺春奶茶，热的七分糖茶味最足，也有茶点心；评分 4.6，营业 08:30-23:00。",
+      "day": 5,
+      "type": "饮品",
+      "near": "平江路"
+    },
+    {
+      "name": "羍咖啡馆（羍市咖啡）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.632589%2C31.315709&name=%E7%BE%8D%E5%92%96%E5%95%A1%E9%A6%86%EF%BC%88%E7%BE%8D%E5%B8%82%E5%92%96%E5%95%A1%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E7%BE%8D%E5%92%96%E5%95%A1%E9%A6%86%EF%BC%88%E7%BE%8D%E5%B8%82%E5%92%96%E5%95%A1%EF%BC%89&type=51",
+      "dish": "葡萄 dirty",
+      "note": "菉葭巷 52 号，离平江路主街步行约 3 分钟，葡萄 dirty 很清新；评分 4.7，人均约 ¥34，营业 10:00-19:00。",
+      "day": 5,
+      "type": "饮品",
+      "near": "平江路"
+    },
+    {
+      "name": "步步莲花咖啡吧",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.480825%2C30.749783&name=%E6%AD%A5%E6%AD%A5%E8%8E%B2%E8%8A%B1%E5%92%96%E5%95%A1%E5%90%A7&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E6%AD%A5%E6%AD%A5%E8%8E%B2%E8%8A%B1%E5%92%96%E5%95%A1%E5%90%A7&type=51",
+      "dish": "咖啡、小吃",
+      "note": "秀水廊街 7-9 号，河边桥头，咖啡味道好，小吃也不错；评分 4.5，人均约 ¥68，营业 11:00-23:00。",
+      "day": 6,
+      "type": "饮品",
+      "near": "乌镇西栅"
+    },
+    {
+      "name": "似水年华",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.480127%2C30.750149&name=%E4%BC%BC%E6%B0%B4%E5%B9%B4%E5%8D%8E&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E4%BC%BC%E6%B0%B4%E5%B9%B4%E5%8D%8E&type=51",
+      "dish": "咖啡、酒",
+      "note": "西栅秀水廊的老店，两栋小楼，户外风景好，以酒和餐为主，咖啡喝的是氛围；评分 4.6，营业 13:30-04:00。",
+      "day": 6,
+      "type": "饮品",
+      "near": "乌镇西栅"
     }
   ],
   "notes": [
