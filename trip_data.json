@@ -142,7 +142,21 @@
       },
       "stops": [
         {
-          "time": "06:30",
+          "time": "06:40",
+          "name": "川沙地铁站",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=121.697817%2C31.1864&name=%E5%B7%9D%E6%B2%99%E5%9C%B0%E9%93%81%E7%AB%99&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E5%B7%9D%E6%B2%99%E5%9C%B0%E9%93%81%E7%AB%99&type=51",
+          "tip": "2 号口进站，地铁 05:30-22:45 运营。",
+          "kind": "transport",
+          "transit": {
+            "mode": "walk",
+            "detail": "从酒店步行约 10 分钟到川沙站 2 号口",
+            "amap": "https://uri.amap.com/navigation?to=121.697817%2C31.1864&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.700798%2C31.184477"
+          }
+        },
+        {
+          "time": "07:20",
           "name": "静安寺",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=121.44532%2C31.223505&name=%E9%9D%99%E5%AE%89%E5%AF%BA&coordinate=gaode&callnative=1&src=itinerary",
@@ -150,7 +164,8 @@
           "tip": "市中心的千年古寺，开放 07:30-17:00，门票 RMB 50，可以不进去，在外面拍照走走。",
           "transit": {
             "mode": "transit",
-            "detail": "川沙站 2 号口进，乘 2 号线往国家会展中心方向，坐 16 站到静安寺（地铁 05:30-22:45 运营）"
+            "detail": "2 号线往国家会展中心方向，坐 16 站到静安寺",
+            "amap": "https://uri.amap.com/navigation?to=121.44532%2C31.223505&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.697817%2C31.1864"
           },
           "sight_desc": "开放 07:30-17:00，门票 RMB 50，可在外面拍照。机位：地铁站 15 号口出站左转 100 米上天桥（用手机倍数拍）；15 号口出站右转 50 米，不过马路，拍正门。"
         },
