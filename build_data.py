@@ -316,7 +316,16 @@ d = {"day": 9, "date": "2027-03-16", "label": "杭州早晨 → 公共交通去�
      ]}
 days.append(d)
 
+def before(t, mins=10):
+    h, m = map(int, t.split(":"))
+    m_ = h * 60 + m - mins
+    return f"{m_ // 60:02d}:{m_ % 60:02d}"
+
+
 for x in days:
+    st = x.get("stay")
+    if st and st["event"] in ("depart", "checkout") and x["stops"][0]["time"] <= st["time"]:
+        st["time"] = before(x["stops"][0]["time"])  # morning hotel exit sorts before a same-time first stop
     chain(x)
 
 # ---- Food
