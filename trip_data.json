@@ -640,6 +640,19 @@
           "kind": "meal"
         },
         {
+          "time": "15:00",
+          "name": "月光码头",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=120.704846%2C31.320136&name=%E6%9C%88%E5%85%89%E7%A0%81%E5%A4%B4&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%9C%88%E5%85%89%E7%A0%81%E5%A4%B4&type=51",
+          "tip": "金鸡湖东岸的游船码头，全年 09:30-21:00 开放，可坐船游湖。",
+          "transit": {
+            "mode": "transit",
+            "detail": "从平江路前往金鸡湖东岸",
+            "amap": "https://uri.amap.com/navigation?to=120.704846%2C31.320136&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.634556%2C31.313969"
+          }
+        },
+        {
           "time": "16:00",
           "name": "金鸡湖 · 东方之门",
           "en": "",
@@ -647,9 +660,9 @@
           "rednote": "https://www.rednote.com/search_result?keyword=%E9%87%91%E9%B8%A1%E6%B9%96+%C2%B7+%E4%B8%9C%E6%96%B9%E4%B9%8B%E9%97%A8&type=51",
           "tip": "园区的湖景和地标建筑。",
           "transit": {
-            "mode": "transit",
-            "detail": "从平江路乘地铁到东方之门站",
-            "amap": "https://uri.amap.com/navigation?to=120.679002%2C31.316853&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.634556%2C31.313969"
+            "mode": "taxi",
+            "detail": "从月光码头打车前往东方之门",
+            "amap": "https://uri.amap.com/navigation?to=120.679002%2C31.316853&mode=car&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.704846%2C31.320136"
           }
         },
         {
