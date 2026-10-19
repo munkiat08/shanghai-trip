@@ -245,11 +245,25 @@
           "en": "",
           "amap": "https://uri.amap.com/marker?position=121.479494%2C31.235983&name=%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97&coordinate=gaode&callnative=1&src=itinerary",
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97&type=51",
-          "tip": "上海最热闹的步行街，晚餐和小吃集中在这里。选择见美食页。",
+          "tip": "上海最热闹的步行街，沿路逛逛，小吃选择见美食页。",
           "transit": {
             "mode": "transit",
             "detail": "陆家嘴站 2 号口进，乘 2 号线往国家会展中心方向，坐 1 站到南京东路，2 号口出，步行 3 分钟",
             "amap": "https://uri.amap.com/navigation?to=121.479494%2C31.235983&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.505911%2C31.235179"
+          }
+        },
+        {
+          "time": "18:00",
+          "name": "晚餐 · 味香斋面馆（南京东路店）",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=121.48102%2C31.232967&name=%E6%99%9A%E9%A4%90+%C2%B7+%E5%91%B3%E9%A6%99%E6%96%8B%E9%9D%A2%E9%A6%86%EF%BC%88%E5%8D%97%E4%BA%AC%E4%B8%9C%E8%B7%AF%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%99%9A%E9%A4%90+%C2%B7+%E5%91%B3%E9%A6%99%E6%96%8B%E9%9D%A2%E9%A6%86%EF%BC%88%E5%8D%97%E4%BA%AC%E4%B8%9C%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
+          "tip": "湖北路 151 号的面馆，晚餐吃面；人均约 ¥37，营业 07:30-20:30。",
+          "kind": "meal",
+          "transit": {
+            "mode": "walk",
+            "detail": "从南京路步行前往",
+            "amap": "https://uri.amap.com/navigation?to=121.48102%2C31.232967&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.479494%2C31.235983"
           }
         },
         {
@@ -262,7 +276,7 @@
           "transit": {
             "mode": "walk",
             "detail": "从南京路步行到外滩",
-            "amap": "https://uri.amap.com/navigation?to=121.492127%2C31.233516&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.479494%2C31.235983"
+            "amap": "https://uri.amap.com/navigation?to=121.492127%2C31.233516&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.48102%2C31.232967"
           }
         },
         {
@@ -1324,34 +1338,12 @@
       "near": "静安寺"
     },
     {
-      "name": "德兴馆",
+      "name": "味香斋面馆（南京东路店）",
       "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E5%BE%B7%E5%85%B4%E9%A6%86&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E5%BE%B7%E5%85%B4%E9%A6%86&type=51",
-      "dish": "鲜肉月饼、鲜肉小笼",
-      "note": "南京东路街道广东路 471 号。",
-      "day": 2,
-      "type": "晚餐",
-      "near": "南京路步行街"
-    },
-    {
-      "name": "鲜得来排骨年糕（山西南路店）",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E9%B2%9C%E5%BE%97%E6%9D%A5%E6%8E%92%E9%AA%A8%E5%B9%B4%E7%B3%95%EF%BC%88%E5%B1%B1%E8%A5%BF%E5%8D%97%E8%B7%AF%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E9%B2%9C%E5%BE%97%E6%9D%A5%E6%8E%92%E9%AA%A8%E5%B9%B4%E7%B3%95%EF%BC%88%E5%B1%B1%E8%A5%BF%E5%8D%97%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
-      "dish": "排骨配年糕",
-      "note": "山西南路店，上海老字号。",
-      "day": 2,
-      "type": "晚餐",
-      "near": "南京路步行街"
-    },
-    {
-      "name": "泸西老弄堂面馆",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E6%B3%B8%E8%A5%BF%E8%80%81%E5%BC%84%E5%A0%82%E9%9D%A2%E9%A6%86&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E6%B3%B8%E8%A5%BF%E8%80%81%E5%BC%84%E5%A0%82%E9%9D%A2%E9%A6%86&type=51",
-      "dish": "蛤蜊猪肝面、炸猪排",
-      "note": "广东路 500 号的面馆。",
+      "amap": "https://uri.amap.com/search?keyword=%E5%91%B3%E9%A6%99%E6%96%8B%E9%9D%A2%E9%A6%86%EF%BC%88%E5%8D%97%E4%BA%AC%E4%B8%9C%E8%B7%AF%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E5%91%B3%E9%A6%99%E6%96%8B%E9%9D%A2%E9%A6%86%EF%BC%88%E5%8D%97%E4%BA%AC%E4%B8%9C%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
+      "dish": "面",
+      "note": "湖北路 151 号的面馆，晚餐吃面；人均约 ¥37，营业 07:30-20:30。",
       "day": 2,
       "type": "晚餐",
       "near": "南京路步行街"
