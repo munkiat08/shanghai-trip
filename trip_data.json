@@ -253,12 +253,12 @@
           }
         },
         {
-          "time": "19:30",
+          "time": "19:00",
           "name": "外滩",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=121.492127%2C31.233516&name=%E5%A4%96%E6%BB%A9&coordinate=gaode&callnative=1&src=itinerary",
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%A4%96%E6%BB%A9&type=51",
-          "tip": "黄浦江边的万国建筑群，灯光 19:00-22:00 亮起；也可去北外滩。",
+          "tip": "黄浦江边的万国建筑群，灯光 19:00-22:00 亮起，也可去北外滩。",
           "transit": {
             "mode": "walk",
             "detail": "从南京路步行到外滩",
@@ -266,25 +266,29 @@
           }
         },
         {
-          "time": "19:30",
+          "time": "20:15",
           "name": "城隍庙 · 豫园",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=121.492497%2C31.227714&name=%E5%9F%8E%E9%9A%8D%E5%BA%99+%C2%B7+%E8%B1%AB%E5%9B%AD&coordinate=gaode&callnative=1&src=itinerary",
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%9F%8E%E9%9A%8D%E5%BA%99+%C2%B7+%E8%B1%AB%E5%9B%AD&type=51",
-          "tip": "外滩之外的夜景备选：城隍庙建议晚上看夜景（开放 06:00-17:00）；豫园开放 09:00-16:00，门票 RMB 40，只逛九曲桥和豫园即可，也可安排在最后一天从杭州回来后去。城隍庙里的小吃价钱偏贵，不建议买。",
-          "optional": true
+          "tip": "城隍庙一带晚上有灯光夜景，九曲桥和豫园商城周边最好看；豫园园内开放 09:00-16:00，门票 RMB 40，夜里不进园，在外面看夜景。城隍庙里的小吃价钱偏贵，不建议买。",
+          "transit": {
+            "mode": "walk",
+            "detail": "从外滩步行前往",
+            "amap": "https://uri.amap.com/navigation?to=121.492497%2C31.227714&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.492127%2C31.233516"
+          }
         },
         {
-          "time": "21:00",
+          "time": "21:30",
           "name": "回酒店 · 嘉虹酒店（上海浦东机场川沙地铁站店）",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=121.700798%2C31.184477&name=%E5%9B%9E%E9%85%92%E5%BA%97+%C2%B7+%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E6%9C%BA%E5%9C%BA%E5%B7%9D%E6%B2%99%E5%9C%B0%E9%93%81%E7%AB%99%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%9B%9E%E9%85%92%E5%BA%97+%C2%B7+%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E6%9C%BA%E5%9C%BA%E5%B7%9D%E6%B2%99%E5%9C%B0%E9%93%81%E7%AB%99%E5%BA%97%EF%BC%89&type=51",
-          "tip": "约 22:00 到酒店，明天去迪士尼。",
+          "tip": "约 22:45 到酒店，明天去迪士尼。",
           "kind": "hotel",
           "transit": {
             "mode": "transit",
-            "detail": "从外滩回：南京东路站 2 号口进，乘 2 号线往浦东 1 号 2 号航站楼方向，坐 13 站到川沙，2 号口出，步行 10 分钟。从豫园回：步行到豫园站 7 号口进，乘 14 号线往桂桥路方向坐 1 站到陆家嘴，站内换乘 2 号线坐 12 站到川沙，2 号口出，步行 10 分钟。全程约 1 小时 15 分钟",
+            "detail": "步行到豫园站 7 号口进，乘 14 号线往桂桥路方向坐 1 站到陆家嘴，站内换乘 2 号线坐 12 站到川沙，2 号口出，步行 10 分钟，全程约 1 小时 15 分钟",
             "amap": "https://uri.amap.com/navigation?to=121.700798%2C31.184477&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.492497%2C31.227714"
           },
           "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97+%E5%B7%9D%E6%B2%99%E5%9C%B0%E9%93%81%E7%AB%99"
