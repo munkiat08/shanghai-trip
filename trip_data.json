@@ -1021,7 +1021,7 @@
     {
       "day": 9,
       "date": "2027-03-16",
-      "label": "杭州早晨 → 打车直达浦东机场 → MH389 回吉隆坡",
+      "label": "杭州早晨 → 公共交通去浦东机场 → MH389 回吉隆坡",
       "transit_hub": {
         "name": "上海浦东国际机场",
         "en": "Shanghai Pudong Airport",
@@ -1033,12 +1033,12 @@
         "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
         "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89",
         "event": "depart",
-        "time": "07:00",
-        "note": "09:15 前退房。"
+        "time": "06:30",
+        "note": "08:45 前退房。"
       },
       "stops": [
         {
-          "time": "07:00",
+          "time": "06:30",
           "name": "早餐 · 酒店附近",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E6%97%A9%E9%A4%90+%C2%B7+%E9%85%92%E5%BA%97%E9%99%84%E8%BF%91&coordinate=gaode&callnative=1&src=itinerary",
@@ -1047,7 +1047,7 @@
           "kind": "meal"
         },
         {
-          "time": "07:45",
+          "time": "07:15",
           "name": "大马弄 · 南宋街 · 河坊街",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.169086%2C30.234203&name=%E5%A4%A7%E9%A9%AC%E5%BC%84+%C2%B7+%E5%8D%97%E5%AE%8B%E8%A1%97+%C2%B7+%E6%B2%B3%E5%9D%8A%E8%A1%97&coordinate=gaode&callnative=1&src=itinerary",
@@ -1060,12 +1060,12 @@
           }
         },
         {
-          "time": "09:15",
+          "time": "08:45",
           "name": "回酒店退房 · 嘉虹酒店（杭州西湖河坊街店）",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E5%9B%9E%E9%85%92%E5%BA%97%E9%80%80%E6%88%BF+%C2%B7+%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%9B%9E%E9%85%92%E5%BA%97%E9%80%80%E6%88%BF+%C2%B7+%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
-          "tip": "取行李并退房，约 09:30 出发。",
+          "tip": "取行李并退房，09:00 出发。",
           "kind": "hotel",
           "transit": {
             "mode": "walk",
@@ -1076,16 +1076,58 @@
         },
         {
           "time": "09:30",
-          "name": "杭州 → 浦东机场",
+          "name": "杭州东站",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=121.809373%2C31.151164&name=%E6%9D%AD%E5%B7%9E+%E2%86%92+%E6%B5%A6%E4%B8%9C%E6%9C%BA%E5%9C%BA&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E6%9D%AD%E5%B7%9E+%E2%86%92+%E6%B5%A6%E4%B8%9C%E6%9C%BA%E5%9C%BA&type=51",
-          "tip": "打车直达浦东机场，全程约 206 公里，不用换乘。",
+          "amap": "https://uri.amap.com/marker?position=120.212605%2C30.290846&name=%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99&type=51",
+          "tip": "乘高铁去上海南站。",
           "kind": "transport",
           "transit": {
-            "mode": "taxi",
-            "detail": "走 S2 杭甬高速、G60、S32 申嘉湖高速，约 2 小时 36 分钟",
-            "amap": "https://uri.amap.com/navigation?to=121.809373%2C31.151164&mode=car&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
+            "mode": "transit",
+            "detail": "步行约 9 分钟到定安路站 D 口，乘地铁 1 号线（往萧山国际机场方向）到火车东站，约 20 分钟",
+            "amap": "https://uri.amap.com/navigation?to=120.212605%2C30.290846&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
+          }
+        },
+        {
+          "time": "10:50",
+          "name": "上海南站",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=121.428879%2C31.153997&name=%E4%B8%8A%E6%B5%B7%E5%8D%97%E7%AB%99&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E4%B8%8A%E6%B5%B7%E5%8D%97%E7%AB%99&type=51",
+          "tip": "高铁到上海南站，换乘地铁 15 号线。",
+          "kind": "transport",
+          "transit": {
+            "mode": "train",
+            "detail": "杭州东站 → 上海南站，高铁约 1 小时；车次以当天购票为准",
+            "amap": "https://uri.amap.com/navigation?to=121.428879%2C31.153997&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.212605%2C30.290846"
+          }
+        },
+        {
+          "time": "11:30",
+          "name": "景洪路站",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=121.444366%2C31.109818&name=%E6%99%AF%E6%B4%AA%E8%B7%AF%E7%AB%99&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%99%AF%E6%B4%AA%E8%B7%AF%E7%AB%99&type=51",
+          "tip": "从 15 号线换到市域机场线。",
+          "kind": "transport",
+          "transit": {
+            "mode": "transit",
+            "detail": "上海南站 4 号入口进，乘地铁 15 号线（往紫竹高新区方向）到景洪路，约 13 分钟，再步行约 15 分钟到市域机场线景洪路站",
+            "amap": "https://uri.amap.com/navigation?to=121.444366%2C31.109818&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.428879%2C31.153997"
+          }
+        },
+        {
+          "time": "12:05",
+          "name": "上海浦东国际机场",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=121.809373%2C31.151164&name=%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&type=51",
+          "tip": "2 号口出站，办理值机；起飞前约 3 小时到达。",
+          "kind": "transport",
+          "transit": {
+            "mode": "transit",
+            "detail": "市域机场线（往浦东 1 号 2 号航站楼方向）到浦东 1 号 2 号航站楼，约 35 分钟；全程约 3 小时",
+            "amap": "https://uri.amap.com/navigation?to=121.809373%2C31.151164&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.444366%2C31.109818"
           }
         },
         {
@@ -1735,7 +1777,7 @@
   ],
   "notes": [
     {
-      "text": "✈ 航班\n• 3/8 MH388 08:55 吉隆坡 → 上海浦东，14:15 抵达\n• 3/16 MH389 15:25 上海浦东 → 吉隆坡（21:00 抵达），09:30 从杭州打车直达机场"
+      "text": "✈ 航班\n• 3/8 MH388 08:55 吉隆坡 → 上海浦东，14:15 抵达\n• 3/16 MH389 15:25 上海浦东 → 吉隆坡（21:00 抵达），09:00 从杭州乘地铁和高铁去机场"
     },
     {
       "text": "🏨 住宿\n• 3/8-3/11 嘉虹酒店（川沙地铁站店），不含餐，电话 86-21-55698958\n• 3/11-3/13 行乐酒店（苏州观前街平江路店），不含餐，赠手作小点心，电话 86-19047038197\n• 3/13-3/14 乌镇民宿，含 2 人早餐，电话 86-573-88731666\n• 3/14-3/16 嘉虹酒店（杭州西湖河坊街店），含 2 人早餐，电话 86-571-85056880"
