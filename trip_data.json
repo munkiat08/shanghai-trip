@@ -97,6 +97,20 @@
           ]
         },
         {
+          "time": "18:30",
+          "name": "晚餐 · 国营工农饭店",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=121.704314%2C31.195957&name=%E6%99%9A%E9%A4%90+%C2%B7+%E5%9B%BD%E8%90%A5%E5%B7%A5%E5%86%9C%E9%A5%AD%E5%BA%97&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%99%9A%E9%A4%90+%C2%B7+%E5%9B%BD%E8%90%A5%E5%B7%A5%E5%86%9C%E9%A5%AD%E5%BA%97&type=51",
+          "tip": "川沙古镇旁的本帮菜老店，晚餐在这里吃；人均约 ¥69，营业 10:00-21:00。",
+          "kind": "meal",
+          "transit": {
+            "mode": "walk",
+            "detail": "从川沙古镇步行前往",
+            "amap": "https://uri.amap.com/navigation?to=121.704314%2C31.195957&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.705032%2C31.196208"
+          }
+        },
+        {
           "time": "20:00",
           "name": "回酒店 · 嘉虹酒店（上海浦东机场川沙地铁站店）",
           "en": "",
@@ -107,7 +121,7 @@
           "transit": {
             "mode": "walk",
             "detail": "从古镇步行回酒店",
-            "amap": "https://uri.amap.com/navigation?to=121.700798%2C31.184477&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.705032%2C31.196208"
+            "amap": "https://uri.amap.com/navigation?to=121.700798%2C31.184477&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.704314%2C31.195957"
           },
           "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97+%E5%B7%9D%E6%B2%99%E5%9C%B0%E9%93%81%E7%AB%99"
         }
@@ -1264,23 +1278,12 @@
       "near": "川沙古镇"
     },
     {
-      "name": "老街人家农家菜",
+      "name": "国营工农饭店",
       "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E8%80%81%E8%A1%97%E4%BA%BA%E5%AE%B6%E5%86%9C%E5%AE%B6%E8%8F%9C&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E8%80%81%E8%A1%97%E4%BA%BA%E5%AE%B6%E5%86%9C%E5%AE%B6%E8%8F%9C&type=51",
-      "dish": "农家菜",
-      "note": "川沙古镇的晚餐选择；营业 09:00-22:30。",
-      "day": 1,
-      "type": "晚餐",
-      "near": "川沙古镇"
-    },
-    {
-      "name": "老街菜饭",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E8%80%81%E8%A1%97%E8%8F%9C%E9%A5%AD&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E8%80%81%E8%A1%97%E8%8F%9C%E9%A5%AD&type=51",
-      "dish": "菜饭",
-      "note": "川沙古镇的晚餐选择；营业 10:30-18:00。",
+      "amap": "https://uri.amap.com/search?keyword=%E5%9B%BD%E8%90%A5%E5%B7%A5%E5%86%9C%E9%A5%AD%E5%BA%97&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E5%9B%BD%E8%90%A5%E5%B7%A5%E5%86%9C%E9%A5%AD%E5%BA%97&type=51",
+      "dish": "本帮菜",
+      "note": "川沙镇乔家弄 10 号，川沙古镇旁的本帮菜老店；人均约 ¥69，营业 10:00-21:00。",
       "day": 1,
       "type": "晚餐",
       "near": "川沙古镇"
