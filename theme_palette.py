@@ -4,7 +4,7 @@ Run after editing trip_data.json:  python theme_palette.py  (writes the itinerar
 It builds the page from trip_data.json (into a temp file), recolours it with the reference palette
 (colours plus a readability pass: type floor, line-height, tap targets, spacing) and writes the palette page.
 itinerary/shanghai-itinerary.html is the earlier design and is NOT touched any more.
-Palette: #A17C75 dusty rose-brown, #B5BDC3 mist grey, #3B5667 slate blue.
+Palette: #B08D57 brass gold, #D9DEE3 fog grey, #1F3A5F Huangpu navy.
 """
 import io
 import re
@@ -18,35 +18,35 @@ SRC = None  # filled by build()
 OUT = "itinerary/shanghai-itinerary-palette.html"
 
 CSS = r"""
-  /* palette recolour: #A17C75 / #B5BDC3 / #3B5667 — colours only */
+  /* palette recolour: #B08D57 / #D9DEE3 / #1F3A5F — colours only */
   body.theme-ink, :root{
-    --bg:#dfe3e6; --surface:#f5f6f7; --surface-2:#e8ebee; --line:#cfd5da;
-    --ink:#1f2d36; --ink-soft:#586a74; --shadow:rgba(59,86,103,.18);
-    --accent:#A17C75; --accent-soft:#f0e5e2; --accent-ink:#7a5750;
-    --jade:#3B5667; --jade-soft:#dde5ea; --jade-ink:#2f4452;
-    --amap-bg:#3B5667; --amap-ink:#eef2f4;
-    --rn-bg:#8f6b64; --rn-ink:#fff7f4;
-    --tc-bg:#798289; --tc-ink:#ffffff;
-    --gold:#8f6b64; --gold-soft:#f0e5e2; --gold-ink:#7a5750;
+    --bg:#e3e6ea; --surface:#f7f6f2; --surface-2:#ecebe5; --line:#d4d7da;
+    --ink:#16243a; --ink-soft:#5a6677; --shadow:rgba(31,58,95,.18);
+    --accent:#B08D57; --accent-soft:#f3ecdc; --accent-ink:#7a6238;
+    --jade:#1F3A5F; --jade-soft:#dce3ec; --jade-ink:#18304f;
+    --amap-bg:#1F3A5F; --amap-ink:#eef1f6;
+    --rn-bg:#9a7a46; --rn-ink:#fffaf0;
+    --tc-bg:#6d7787; --tc-ink:#ffffff;
+    --gold:#9a7a46; --gold-soft:#f3ecdc; --gold-ink:#7a6238;
   }
   body.theme-ink .tag, body.theme-ink .tag.day, body.theme-ink .tag.optional, body.theme-ink .badge.optional,
-  body.theme-ink #panel-food .tag{background:#798289; color:#ffffff}  /* time / 备选 / food category: same as the Trip.com button */
-  body.theme-ink .catnav a{background:#798289; border-color:#798289; color:#ffffff}
+  body.theme-ink #panel-food .tag{background:#6d7787; color:#ffffff}  /* time / 备选 / food category: same as the Trip.com button */
+  body.theme-ink .catnav a{background:#6d7787; border-color:#6d7787; color:#ffffff}
   body.theme-ink .daychip[aria-selected="true"], body.theme-ink .foodnav-btn[aria-current="true"],
-  body.theme-ink .mapchip[aria-selected="true"]{background:#3B5667; border-color:#3B5667; color:#ffffff}
-  body.theme-ink .tab[aria-selected="true"]{color:#3B5667}
-  body.theme-ink .head{border-bottom-color:#A17C75}
-  body.theme-ink .tip{border-left-color:#A17C75}
-  body.theme-ink .pin, body.theme-ink .maplist .n{background:#3B5667 !important}
-  body.theme-ink .pin.hotel, body.theme-ink .maplist .n.hotel{background:#A17C75 !important}
+  body.theme-ink .mapchip[aria-selected="true"]{background:#1F3A5F; border-color:#1F3A5F; color:#ffffff}
+  body.theme-ink .tab[aria-selected="true"]{color:#1F3A5F}
+  body.theme-ink .head{border-bottom-color:#B08D57}
+  body.theme-ink .tip{border-left-color:#B08D57}
+  body.theme-ink .pin, body.theme-ink .maplist .n{background:#1F3A5F !important}
+  body.theme-ink .pin.hotel, body.theme-ink .maplist .n.hotel{background:#B08D57 !important}
   body.theme-ink .amap-btn.rn{max-width:100%; text-align:left}  /* long post titles wrap instead of overflowing */
-  body.theme-ink path.leaflet-interactive{stroke:#A17C75 !important}
+  body.theme-ink path.leaflet-interactive{stroke:#B08D57 !important}
   /* readability pass */
   body.theme-ink{line-height:1.7}  /* 1. roomier lines for CJK text */
   body.theme-ink .badge, body.theme-ink .tag, body.theme-ink .img-credit, body.theme-ink .rt-chip, body.theme-ink .mapnote,
   body.theme-ink .maplist .nm em, body.theme-ink .tip .src, body.theme-ink .note-text .src, body.theme-ink .amap-btn,
   body.theme-ink .tip .amap-btn, body.theme-ink .group-head .amap-btn, body.theme-ink .maplist a{font-size:12.5px}  /* 2. no text under 12.5px */
-  body.theme-ink .rt-time, body.theme-ink .rt-zone-h, body.theme-ink .stop-time, body.theme-ink .img-credit, body.theme-ink .rt-chip{color:#6f4f49; border-color:#6f4f49}  /* 3. time/credit text had ~4:1 contrast */
+  body.theme-ink .rt-time, body.theme-ink .rt-zone-h, body.theme-ink .stop-time, body.theme-ink .img-credit, body.theme-ink .rt-chip{color:#6b5530; border-color:#6b5530}  /* 3. time/credit text had ~4:1 contrast */
   body.theme-ink .head h1{font-family:'LXGW WenKai','Noto Serif SC',serif; font-weight:700; letter-spacing:.02em}  /* 4. plain bold title, readable */
   body.theme-ink .day-head, body.theme-ink .maptitle{font-family:'LXGW WenKai','Noto Serif SC',serif; font-weight:700}
   body.theme-ink .tip{line-height:1.75; padding:11px 13px}
@@ -59,6 +59,8 @@ CSS = r"""
     body.theme-ink .tip .amap-btn, body.theme-ink .group-head .amap-btn{min-height:0}
     body.theme-ink .maplist li{padding:3px 0}
   }
+
+  body.theme-ink .panels{background-image:url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%27260%27%20height=%27260%27%20viewBox=%270%200%20260%20260%27%20fill=%27none%27%20stroke=%27%231F3A5F%27%20stroke-width=%271.6%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%3E%3Cg%20opacity=%27.12%27%3E%3Cg%20transform=%27translate(48%2056)%27%3E%3C%21--%20Oriental%20Pearl%20Tower%20--%3E%3Cpath%20d=%27M0%20-50V30%27/%3E%3Ccircle%20cx=%270%27%20cy=%27-22%27%20r=%275%27/%3E%3Ccircle%20cx=%270%27%20cy=%270%27%20r=%279%27%20fill=%27%231F3A5F%27%20fill-opacity=%27.25%27/%3E%3Ccircle%20cx=%270%27%20cy=%2722%27%20r=%275%27/%3E%3Cpath%20d=%27M-12%2044L-2%2028M12%2044L2%2028M0%2028V44%27/%3E%3C/g%3E%3Cg%20transform=%27translate(190%2056)%27%3E%3C%21--%20xiaolongbao%20--%3E%3Cpath%20d=%27M-20%206Q-22%20-14%200%20-16Q22%20-14%2020%206Q0%2014%20-20%206Z%27%20fill=%27%231F3A5F%27%20fill-opacity=%27.12%27/%3E%3Cpath%20d=%27M0%20-16V-8M-8%20-14L-5%20-6M8%20-14L5%20-6M-14%20-10L-9%20-3M14%20-10L9%20-3%27/%3E%3Cpath%20d=%27M-8%20-26q-4%20-5%200%20-9M2%20-26q-4%20-5%200%20-9M12%20-26q-4%20-5%200%20-9%27/%3E%3C/g%3E%3Cg%20transform=%27translate(52%20184)%27%3E%3C%21--%20Lujiazui:%20Jin%20Mao%20%2B%20SWFC%20--%3E%3Cpath%20d=%27M-30%2034V-10H-18V-18H-10V-28H-4V34M-30%2034H0%27/%3E%3Cpath%20d=%27M10%2034V-26L24%20-34L30%20-26V34Z%27/%3E%3Cpath%20d=%27M17%20-14L23%20-14L20%20-4Z%27%20fill=%27%231F3A5F%27%20fill-opacity=%27.3%27/%3E%3C/g%3E%3Cg%20transform=%27translate(190%20180)%27%3E%3C%21--%20Yuyuan%20roof%20--%3E%3Cpath%20d=%27M-30%20-4Q-14%20-2%20-6%20-16Q0%20-24%206%20-16Q14%20-2%2030%20-4%27/%3E%3Cpath%20d=%27M-24%20-2V22H24V-2%27/%3E%3Cpath%20d=%27M-6%2022V8H6V22M-24%2012h12M12%2012h12%27/%3E%3C/g%3E%3C/g%3E%3Cg%20opacity=%27.12%27%20transform=%27translate(130%20130)%27%3E%3C%21--%20yulan%20magnolia%20--%3E%3Cpath%20d=%27M0%206C-8%20-2%20-6%20-14%200%20-18C6%20-14%208%20-2%200%206ZM-3%206C-14%204%20-16%20-6%20-12%20-12C-6%20-8%20-2%20-2%20-3%206ZM3%206C14%204%2016%20-6%2012%20-12C6%20-8%202%20-2%203%206Z%27/%3E%3C/g%3E%3C/svg%3E"); background-size:260px 260px; background-repeat:repeat}
 """
 
 def prune_css(html):
@@ -198,7 +200,7 @@ tmp.close()
 subprocess.run([sys.executable, BUILDER, "trip_data.json", tmp.name], check=True, stdout=subprocess.DEVNULL)
 html = io.open(tmp.name, encoding="utf-8").read()
 os.remove(tmp.name)
-block = '<meta name="theme-color" content="#3B5667">\n<style id="palette-theme">' + CSS + "</style>\n</head>"
+block = '<meta name="theme-color" content="#1F3A5F">\n<style id="palette-theme">' + CSS + "</style>\n</head>"
 html = html.replace("</head>", block, 1)
 before = len(html)
 html = prune_css(html)
