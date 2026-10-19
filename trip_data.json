@@ -1867,6 +1867,138 @@
       "day": 9,
       "type": "早餐",
       "near": "酒店附近"
+    },
+    {
+      "name": "和满堂 · 经典本帮菜",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.70784%2C31.19429&name=%E5%92%8C%E6%BB%A1%E5%A0%82+%C2%B7+%E7%BB%8F%E5%85%B8%E6%9C%AC%E5%B8%AE%E8%8F%9C&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E5%92%8C%E6%BB%A1%E5%A0%82+%C2%B7+%E7%BB%8F%E5%85%B8%E6%9C%AC%E5%B8%AE%E8%8F%9C&type=51",
+      "dish": "本帮菜",
+      "note": "备选 · 川沙新镇新川路 71 号的本帮菜馆，晚餐备选；评分 4.6，人均约 ¥115，营业 10:30-14:00、16:00-21:00。",
+      "day": 1,
+      "type": "晚餐",
+      "near": "川沙古镇"
+    },
+    {
+      "name": "老吉士（久光百货店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.446331%2C31.223924&name=%E8%80%81%E5%90%89%E5%A3%AB%EF%BC%88%E4%B9%85%E5%85%89%E7%99%BE%E8%B4%A7%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E8%80%81%E5%90%89%E5%A3%AB%EF%BC%88%E4%B9%85%E5%85%89%E7%99%BE%E8%B4%A7%E5%BA%97%EF%BC%89&type=51",
+      "dish": "上海菜",
+      "note": "备选 · 静安寺久光百货 8 楼的上海菜馆，午餐备选；评分 4.4，人均约 ¥181，营业 11:00-14:30、17:00-22:00。",
+      "day": 2,
+      "type": "餐厅",
+      "near": "静安寺"
+    },
+    {
+      "name": "老正兴菜馆（福州路店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.480103%2C31.233141&name=%E8%80%81%E6%AD%A3%E5%85%B4%E8%8F%9C%E9%A6%86%EF%BC%88%E7%A6%8F%E5%B7%9E%E8%B7%AF%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E8%80%81%E6%AD%A3%E5%85%B4%E8%8F%9C%E9%A6%86%EF%BC%88%E7%A6%8F%E5%B7%9E%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
+      "dish": "本帮菜",
+      "note": "备选 · 福州路 556 号的本帮菜老字号，晚餐备选；评分 4.6，人均约 ¥148，营业 11:00-14:00、17:00-21:00。",
+      "day": 2,
+      "type": "晚餐",
+      "near": "南京路步行街"
+    },
+    {
+      "name": "蟹皇捞 · 江南蟹黄面（观前街店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.629524%2C31.310927&name=%E8%9F%B9%E7%9A%87%E6%8D%9E+%C2%B7+%E6%B1%9F%E5%8D%97%E8%9F%B9%E9%BB%84%E9%9D%A2%EF%BC%88%E8%A7%82%E5%89%8D%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E8%9F%B9%E7%9A%87%E6%8D%9E+%C2%B7+%E6%B1%9F%E5%8D%97%E8%9F%B9%E9%BB%84%E9%9D%A2%EF%BC%88%E8%A7%82%E5%89%8D%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
+      "dish": "蟹黄面",
+      "note": "备选 · 观前街落瓜桥下塘 76 号，午餐备选；评分 4.5，人均约 ¥78，营业 10:00-23:00。",
+      "day": 4,
+      "type": "餐厅",
+      "near": "行乐酒店"
+    },
+    {
+      "name": "松鹤楼（山塘店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.601245%2C31.318435&name=%E6%9D%BE%E9%B9%A4%E6%A5%BC%EF%BC%88%E5%B1%B1%E5%A1%98%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E6%9D%BE%E9%B9%A4%E6%A5%BC%EF%BC%88%E5%B1%B1%E5%A1%98%E5%BA%97%EF%BC%89&type=51",
+      "dish": "苏帮菜",
+      "note": "备选 · 山塘街 196-198 号的苏帮菜老字号，晚餐备选；评分 4.6，人均约 ¥167，周四营业 10:00-13:00、17:00-23:00。",
+      "day": 4,
+      "type": "晚餐",
+      "near": "七里山塘"
+    },
+    {
+      "name": "蟹挽晴 · 蟹黄面（平江路店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.632475%2C31.319475&name=%E8%9F%B9%E6%8C%BD%E6%99%B4+%C2%B7+%E8%9F%B9%E9%BB%84%E9%9D%A2%EF%BC%88%E5%B9%B3%E6%B1%9F%E8%B7%AF%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E8%9F%B9%E6%8C%BD%E6%99%B4+%C2%B7+%E8%9F%B9%E9%BB%84%E9%9D%A2%EF%BC%88%E5%B9%B3%E6%B1%9F%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
+      "dish": "蟹黄面",
+      "note": "备选 · 平江路 272 号，临河而坐，午餐备选；评分 4.5，人均约 ¥58，营业 10:00-22:00。",
+      "day": 5,
+      "type": "餐厅",
+      "near": "平江路"
+    },
+    {
+      "name": "裕生餐馆",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.486699%2C30.74816&name=%E8%A3%95%E7%94%9F%E9%A4%90%E9%A6%86&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E8%A3%95%E7%94%9F%E9%A4%90%E9%A6%86&type=51",
+      "dish": "中餐",
+      "note": "备选 · 西栅大街 136-140 号的餐馆，午餐备选；评分 4.3，人均约 ¥73，营业 11:00-13:30、17:00-24:00。",
+      "day": 6,
+      "type": "餐厅",
+      "near": "乌镇景区"
+    },
+    {
+      "name": "和聚兴餐厅",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.485786%2C30.748013&name=%E5%92%8C%E8%81%9A%E5%85%B4%E9%A4%90%E5%8E%85&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E5%92%8C%E8%81%9A%E5%85%B4%E9%A4%90%E5%8E%85&type=51",
+      "dish": "中餐",
+      "note": "备选 · 西栅景区内的餐厅，晚餐备选；评分 4.0，人均约 ¥83，营业 10:30-21:30。",
+      "day": 6,
+      "type": "晚餐",
+      "near": "乌镇西栅"
+    },
+    {
+      "name": "王润兴酒楼",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.170794%2C30.240169&name=%E7%8E%8B%E6%B6%A6%E5%85%B4%E9%85%92%E6%A5%BC&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E7%8E%8B%E6%B6%A6%E5%85%B4%E9%85%92%E6%A5%BC&type=51",
+      "dish": "杭帮菜",
+      "note": "备选 · 河坊街 101-103 号的老字号酒楼，午餐备选；评分 4.5，人均约 ¥74，营业 09:00-14:00、16:00-21:00。",
+      "day": 7,
+      "type": "餐厅",
+      "near": "河坊街"
+    },
+    {
+      "name": "新白鹿餐厅（龙游路总店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.159508%2C30.262055&name=%E6%96%B0%E7%99%BD%E9%B9%BF%E9%A4%90%E5%8E%85%EF%BC%88%E9%BE%99%E6%B8%B8%E8%B7%AF%E6%80%BB%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E6%96%B0%E7%99%BD%E9%B9%BF%E9%A4%90%E5%8E%85%EF%BC%88%E9%BE%99%E6%B8%B8%E8%B7%AF%E6%80%BB%E5%BA%97%EF%BC%89&type=51",
+      "dish": "杭帮菜",
+      "note": "备选 · 龙游路 56 号的杭帮菜名店，离武林夜市很近，晚餐备选；评分 4.7，人均约 ¥65，营业 10:30-14:00、16:30-21:00。",
+      "day": 7,
+      "type": "晚餐",
+      "near": "武林夜市"
+    },
+    {
+      "name": "福泉素斋",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.098212%2C30.239218&name=%E7%A6%8F%E6%B3%89%E7%B4%A0%E6%96%8B&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E7%A6%8F%E6%B3%89%E7%B4%A0%E6%96%8B&type=51",
+      "dish": "素面",
+      "note": "备选 · 灵隐路法云弄 16 号的素面，离灵隐寺很近，午餐备选；评分 4.4，人均约 ¥26，营业 08:00-18:00。",
+      "day": 8,
+      "type": "餐厅",
+      "near": "灵隐寺"
+    },
+    {
+      "name": "寄畅興 · 百年蟹黄面（湖滨银泰 in77 店）",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=120.163183%2C30.25497&name=%E5%AF%84%E7%95%85%E8%88%88+%C2%B7+%E7%99%BE%E5%B9%B4%E8%9F%B9%E9%BB%84%E9%9D%A2%EF%BC%88%E6%B9%96%E6%BB%A8%E9%93%B6%E6%B3%B0+in77+%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E5%AF%84%E7%95%85%E8%88%88+%C2%B7+%E7%99%BE%E5%B9%B4%E8%9F%B9%E9%BB%84%E9%9D%A2%EF%BC%88%E6%B9%96%E6%BB%A8%E9%93%B6%E6%B3%B0+in77+%E5%BA%97%EF%BC%89&type=51",
+      "dish": "蟹黄面",
+      "note": "备选 · 湖滨银泰 in77 B 区 1 楼，晚餐备选，饭后可以直接逛 in77；评分 4.6，人均约 ¥85，营业 10:00-22:00。",
+      "day": 8,
+      "type": "晚餐",
+      "near": "湖滨银泰 in77"
     }
   ],
   "notes": [
