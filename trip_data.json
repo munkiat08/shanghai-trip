@@ -1039,12 +1039,17 @@
       "stops": [
         {
           "time": "06:30",
-          "name": "早餐 · 酒店附近",
+          "name": "早餐 · 游埠豆浆（河坊街店）",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E6%97%A9%E9%A4%90+%C2%B7+%E9%85%92%E5%BA%97%E9%99%84%E8%BF%91&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E6%97%A9%E9%A4%90+%C2%B7+%E9%85%92%E5%BA%97%E9%99%84%E8%BF%91&type=51",
-          "tip": "三选一，见美食页。",
-          "kind": "meal"
+          "amap": "https://uri.amap.com/marker?position=120.169084%2C30.240898&name=%E6%97%A9%E9%A4%90+%C2%B7+%E6%B8%B8%E5%9F%A0%E8%B1%86%E6%B5%86%EF%BC%88%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%97%A9%E9%A4%90+%C2%B7+%E6%B8%B8%E5%9F%A0%E8%B1%86%E6%B5%86%EF%BC%88%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
+          "tip": "杭州老牌豆浆店，早餐吃豆浆、油条、麻球、粽子；人均约 ¥12，营业 05:00-20:00。",
+          "kind": "meal",
+          "transit": {
+            "mode": "walk",
+            "detail": "从酒店步行约 7 分钟",
+            "amap": "https://uri.amap.com/navigation?to=120.169084%2C30.240898&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
+          }
         },
         {
           "time": "07:00",
@@ -1056,7 +1061,7 @@
           "transit": {
             "mode": "taxi",
             "detail": "酒店打车出发，约 1 小时 15 分钟",
-            "amap": "https://uri.amap.com/navigation?to=120.095362%2C30.227208&mode=car&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
+            "amap": "https://uri.amap.com/navigation?to=120.095362%2C30.227208&mode=car&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.169084%2C30.240898"
           }
         },
         {
@@ -1126,11 +1131,11 @@
         },
         {
           "time": "18:30",
-          "name": "杭州酒家（延安路店）",
+          "name": "晚餐 · 杭州酒家（延安路店）",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=120.164014%2C30.251744&name=%E6%9D%AD%E5%B7%9E%E9%85%92%E5%AE%B6%EF%BC%88%E5%BB%B6%E5%AE%89%E8%B7%AF%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%E9%85%92%E5%AE%B6%EF%BC%88%E5%BB%B6%E5%AE%89%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
-          "tip": "湖滨银泰 in77 C2 区旁，晚餐吃杭帮菜。",
+          "amap": "https://uri.amap.com/marker?position=120.164014%2C30.251744&name=%E6%99%9A%E9%A4%90+%C2%B7+%E6%9D%AD%E5%B7%9E%E9%85%92%E5%AE%B6%EF%BC%88%E5%BB%B6%E5%AE%89%E8%B7%AF%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%99%9A%E9%A4%90+%C2%B7+%E6%9D%AD%E5%B7%9E%E9%85%92%E5%AE%B6%EF%BC%88%E5%BB%B6%E5%AE%89%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
+          "tip": "杭帮菜老字号，延安路 205 号，晚餐吃东坡肉、宋嫂鱼羹、醋鱼；人均约 ¥77，营业 17:00-20:30。",
           "kind": "meal",
           "transit": {
             "mode": "transit",
@@ -1189,12 +1194,17 @@
       "stops": [
         {
           "time": "06:30",
-          "name": "早餐 · 酒店附近",
+          "name": "早餐 · 泮芳春煎饺 · 米其林餐厅（中山南路店）",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E6%97%A9%E9%A4%90+%C2%B7+%E9%85%92%E5%BA%97%E9%99%84%E8%BF%91&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E6%97%A9%E9%A4%90+%C2%B7+%E9%85%92%E5%BA%97%E9%99%84%E8%BF%91&type=51",
-          "tip": "三选一，见美食页。",
-          "kind": "meal"
+          "amap": "https://uri.amap.com/marker?position=120.171034%2C30.237205&name=%E6%97%A9%E9%A4%90+%C2%B7+%E6%B3%AE%E8%8A%B3%E6%98%A5%E7%85%8E%E9%A5%BA+%C2%B7+%E7%B1%B3%E5%85%B6%E6%9E%97%E9%A4%90%E5%8E%85%EF%BC%88%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%97%A9%E9%A4%90+%C2%B7+%E6%B3%AE%E8%8A%B3%E6%98%A5%E7%85%8E%E9%A5%BA+%C2%B7+%E7%B1%B3%E5%85%B6%E6%9E%97%E9%A4%90%E5%8E%85%EF%BC%88%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
+          "tip": "杭州老字号煎饺店，早餐吃煎饺、葱油拌面、咸豆腐脑；人均约 ¥15，营业 06:00-20:00。",
+          "kind": "meal",
+          "transit": {
+            "mode": "walk",
+            "detail": "从酒店步行约 12 分钟",
+            "amap": "https://uri.amap.com/navigation?to=120.171034%2C30.237205&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
+          }
         },
         {
           "time": "07:15",
@@ -1206,7 +1216,7 @@
           "transit": {
             "mode": "walk",
             "detail": "从酒店步行",
-            "amap": "https://uri.amap.com/navigation?to=120.169086%2C30.234203&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
+            "amap": "https://uri.amap.com/navigation?to=120.169086%2C30.234203&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.171034%2C30.237205"
           }
         },
         {
@@ -1743,29 +1753,7 @@
       "amap": "https://uri.amap.com/search?keyword=%E6%B8%B8%E5%9F%A0%E8%B1%86%E6%B5%86%EF%BC%88%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E6%9D%AD%E5%B7%9E",
       "rednote": "https://www.rednote.com/search_result?keyword=%E6%B8%B8%E5%9F%A0%E8%B1%86%E6%B5%86%EF%BC%88%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
       "dish": "豆浆、油条、麻球、粽子",
-      "note": "酒店步行 7 分钟；营业 06:00-14:00。",
-      "day": 8,
-      "type": "早餐",
-      "near": "酒店附近"
-    },
-    {
-      "name": "泮芳春煎饺 · 米其林餐厅（中山南路店）",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E6%B3%AE%E8%8A%B3%E6%98%A5%E7%85%8E%E9%A5%BA+%C2%B7+%E7%B1%B3%E5%85%B6%E6%9E%97%E9%A4%90%E5%8E%85%EF%BC%88%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E6%9D%AD%E5%B7%9E",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E6%B3%AE%E8%8A%B3%E6%98%A5%E7%85%8E%E9%A5%BA+%C2%B7+%E7%B1%B3%E5%85%B6%E6%9E%97%E9%A4%90%E5%8E%85%EF%BC%88%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
-      "dish": "煎饺、葱油拌面、咸豆腐脑",
-      "note": "酒店步行 12 分钟；营业 06:00-13:30。",
-      "day": 8,
-      "type": "早餐",
-      "near": "酒店附近"
-    },
-    {
-      "name": "王氏烧饼无矾油条",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E7%8E%8B%E6%B0%8F%E7%83%A7%E9%A5%BC%E6%97%A0%E7%9F%BE%E6%B2%B9%E6%9D%A1&callnative=1&src=itinerary&city=%E6%9D%AD%E5%B7%9E",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E7%8E%8B%E6%B0%8F%E7%83%A7%E9%A5%BC%E6%97%A0%E7%9F%BE%E6%B2%B9%E6%9D%A1&type=51",
-      "dish": "饭团、糍粑、油条、豆腐脑、烧饼",
-      "note": "西溪路 60 号，靠近断桥残雪；营业 04:30-13:00。",
+      "note": "后市街 17 号，酒店步行约 7 分钟，早餐选择；人均约 ¥12，营业 05:00-20:00。",
       "day": 8,
       "type": "早餐",
       "near": "酒店附近"
@@ -1776,21 +1764,10 @@
       "amap": "https://uri.amap.com/search?keyword=%E6%9D%AD%E5%B7%9E%E9%85%92%E5%AE%B6%EF%BC%88%E5%BB%B6%E5%AE%89%E8%B7%AF%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E6%9D%AD%E5%B7%9E",
       "rednote": "https://www.rednote.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%E9%85%92%E5%AE%B6%EF%BC%88%E5%BB%B6%E5%AE%89%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
       "dish": "东坡肉、宋嫂鱼羹、醋鱼",
-      "note": "杭帮菜老字号，延安路 205 号。",
+      "note": "延安路 205 号的杭帮菜老字号，晚餐选择；人均约 ¥77，营业 17:00-20:30。",
       "day": 8,
       "type": "晚餐",
       "near": "湖滨银泰 in77"
-    },
-    {
-      "name": "游埠豆浆（河坊街店）",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E6%B8%B8%E5%9F%A0%E8%B1%86%E6%B5%86%EF%BC%88%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E6%9D%AD%E5%B7%9E",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E6%B8%B8%E5%9F%A0%E8%B1%86%E6%B5%86%EF%BC%88%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
-      "dish": "豆浆、油条、麻球、粽子",
-      "note": "酒店步行 7 分钟；营业 06:00-14:00。",
-      "day": 9,
-      "type": "早餐",
-      "near": "酒店附近"
     },
     {
       "name": "泮芳春煎饺 · 米其林餐厅（中山南路店）",
@@ -1798,18 +1775,7 @@
       "amap": "https://uri.amap.com/search?keyword=%E6%B3%AE%E8%8A%B3%E6%98%A5%E7%85%8E%E9%A5%BA+%C2%B7+%E7%B1%B3%E5%85%B6%E6%9E%97%E9%A4%90%E5%8E%85%EF%BC%88%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E6%9D%AD%E5%B7%9E",
       "rednote": "https://www.rednote.com/search_result?keyword=%E6%B3%AE%E8%8A%B3%E6%98%A5%E7%85%8E%E9%A5%BA+%C2%B7+%E7%B1%B3%E5%85%B6%E6%9E%97%E9%A4%90%E5%8E%85%EF%BC%88%E4%B8%AD%E5%B1%B1%E5%8D%97%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
       "dish": "煎饺、葱油拌面、咸豆腐脑",
-      "note": "酒店步行 12 分钟；营业 06:00-13:30。",
-      "day": 9,
-      "type": "早餐",
-      "near": "酒店附近"
-    },
-    {
-      "name": "王氏烧饼无矾油条",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E7%8E%8B%E6%B0%8F%E7%83%A7%E9%A5%BC%E6%97%A0%E7%9F%BE%E6%B2%B9%E6%9D%A1&callnative=1&src=itinerary&city=%E6%9D%AD%E5%B7%9E",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E7%8E%8B%E6%B0%8F%E7%83%A7%E9%A5%BC%E6%97%A0%E7%9F%BE%E6%B2%B9%E6%9D%A1&type=51",
-      "dish": "饭团、糍粑、油条、豆腐脑、烧饼",
-      "note": "西溪路 60 号；营业 04:30-13:00。",
+      "note": "中山南路 479 号，酒店步行约 12 分钟，早餐选择；人均约 ¥15，营业 06:00-20:00。",
       "day": 9,
       "type": "早餐",
       "near": "酒店附近"
