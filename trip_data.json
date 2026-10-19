@@ -775,12 +775,17 @@
       "stops": [
         {
           "time": "07:30",
-          "name": "早餐 · 酒店附近",
+          "name": "早餐 · 鑫震源（大儒巷店）",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=120.63217%2C31.307549&name=%E6%97%A9%E9%A4%90+%C2%B7+%E9%85%92%E5%BA%97%E9%99%84%E8%BF%91&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E6%97%A9%E9%A4%90+%C2%B7+%E9%85%92%E5%BA%97%E9%99%84%E8%BF%91&type=51",
-          "tip": "二选一，见美食页。",
-          "kind": "meal"
+          "amap": "https://uri.amap.com/marker?position=120.632625%2C31.312475&name=%E6%97%A9%E9%A4%90+%C2%B7+%E9%91%AB%E9%9C%87%E6%BA%90%EF%BC%88%E5%A4%A7%E5%84%92%E5%B7%B7%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%97%A9%E9%A4%90+%C2%B7+%E9%91%AB%E9%9C%87%E6%BA%90%EF%BC%88%E5%A4%A7%E5%84%92%E5%B7%B7%E5%BA%97%EF%BC%89&type=51",
+          "tip": "苏式大虾生煎名店，早餐吃生煎，也有蛋黄芝士纸皮烧卖、桂花豆沙小圆子；人均约 ¥36，营业 06:00-21:30。",
+          "kind": "meal",
+          "transit": {
+            "mode": "walk",
+            "detail": "从酒店步行前往",
+            "amap": "https://uri.amap.com/navigation?to=120.632625%2C31.312475&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.63217%2C31.307549"
+          }
         },
         {
           "time": "08:30",
@@ -793,7 +798,7 @@
           "transit": {
             "mode": "taxi",
             "detail": "苏州打车前往乌镇西栅游客中心",
-            "amap": "https://uri.amap.com/navigation?to=120.489158%2C30.748054&mode=car&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.63217%2C31.307549"
+            "amap": "https://uri.amap.com/navigation?to=120.489158%2C30.748054&mode=car&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.632625%2C31.312475"
           }
         },
         {
@@ -1529,23 +1534,12 @@
       "near": "平江路"
     },
     {
-      "name": "万福兴（凤凰街店）",
+      "name": "鑫震源 · 苏式大虾生煎（大儒巷店）",
       "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E4%B8%87%E7%A6%8F%E5%85%B4%EF%BC%88%E5%87%A4%E5%87%B0%E8%A1%97%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E8%8B%8F%E5%B7%9E",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E4%B8%87%E7%A6%8F%E5%85%B4%EF%BC%88%E5%87%A4%E5%87%B0%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
-      "dish": "炒肉面、桂花糕、定勝糕、咸猪油糕",
-      "note": "酒店附近早餐，二选一；营业 06:00-19:00。",
-      "day": 6,
-      "type": "早餐",
-      "near": "行乐酒店"
-    },
-    {
-      "name": "鑫震源 · 苏式大虾生煎",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E9%91%AB%E9%9C%87%E6%BA%90+%C2%B7+%E8%8B%8F%E5%BC%8F%E5%A4%A7%E8%99%BE%E7%94%9F%E7%85%8E&callnative=1&src=itinerary&city=%E8%8B%8F%E5%B7%9E",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E9%91%AB%E9%9C%87%E6%BA%90+%C2%B7+%E8%8B%8F%E5%BC%8F%E5%A4%A7%E8%99%BE%E7%94%9F%E7%85%8E&type=51",
-      "dish": "蛋黄芝士纸皮烧卖、桂花豆沙小圆子",
-      "note": "酒店附近早餐，二选一；营业 05:30-20:00。",
+      "amap": "https://uri.amap.com/search?keyword=%E9%91%AB%E9%9C%87%E6%BA%90+%C2%B7+%E8%8B%8F%E5%BC%8F%E5%A4%A7%E8%99%BE%E7%94%9F%E7%85%8E%EF%BC%88%E5%A4%A7%E5%84%92%E5%B7%B7%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E8%8B%8F%E5%B7%9E",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E9%91%AB%E9%9C%87%E6%BA%90+%C2%B7+%E8%8B%8F%E5%BC%8F%E5%A4%A7%E8%99%BE%E7%94%9F%E7%85%8E%EF%BC%88%E5%A4%A7%E5%84%92%E5%B7%B7%E5%BA%97%EF%BC%89&type=51",
+      "dish": "大虾生煎、蛋黄芝士纸皮烧卖、桂花豆沙小圆子",
+      "note": "大儒巷 34 号，酒店附近，早餐选择；人均约 ¥36，营业 06:00-21:30。",
       "day": 6,
       "type": "早餐",
       "near": "行乐酒店"
