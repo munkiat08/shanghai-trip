@@ -1999,6 +1999,50 @@
       "day": 8,
       "type": "晚餐",
       "near": "湖滨银泰 in77"
+    },
+    {
+      "name": "米奇好伙伴美味集市",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.662086%2C31.142353&name=%E7%B1%B3%E5%A5%87%E5%A5%BD%E4%BC%99%E4%BC%B4%E7%BE%8E%E5%91%B3%E9%9B%86%E5%B8%82&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E7%B1%B3%E5%A5%87%E5%A5%BD%E4%BC%99%E4%BC%B4%E7%BE%8E%E5%91%B3%E9%9B%86%E5%B8%82&type=51",
+      "dish": "快餐",
+      "note": "上海迪士尼乐园内的快餐餐厅，午餐 / 晚餐选择；评分 4.3，营业 10:30-21:15。",
+      "day": 3,
+      "type": "餐厅",
+      "near": "上海迪士尼乐园"
+    },
+    {
+      "name": "星露台餐厅",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.658025%2C31.141149&name=%E6%98%9F%E9%9C%B2%E5%8F%B0%E9%A4%90%E5%8E%85&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E6%98%9F%E9%9C%B2%E5%8F%B0%E9%A4%90%E5%8E%85&type=51",
+      "dish": "快餐",
+      "note": "上海迪士尼乐园内的快餐餐厅，午餐 / 晚餐选择；评分 4.1，营业 10:30-21:15。",
+      "day": 3,
+      "type": "餐厅",
+      "near": "上海迪士尼乐园"
+    },
+    {
+      "name": "巴波萨烧烤",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.66281%2C31.145585&name=%E5%B7%B4%E6%B3%A2%E8%90%A8%E7%83%A7%E7%83%A4&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E5%B7%B4%E6%B3%A2%E8%90%A8%E7%83%A7%E7%83%A4&type=51",
+      "dish": "烧烤",
+      "note": "上海迪士尼乐园内的烧烤餐厅，午餐 / 晚餐选择；评分 4.4，营业 10:30-20:30。",
+      "day": 3,
+      "type": "餐厅",
+      "near": "上海迪士尼乐园"
+    },
+    {
+      "name": "达菲好友欢庆堂",
+      "en": "",
+      "amap": "https://uri.amap.com/marker?position=121.66254%2C31.142855&name=%E8%BE%BE%E8%8F%B2%E5%A5%BD%E5%8F%8B%E6%AC%A2%E5%BA%86%E5%A0%82&coordinate=gaode&callnative=1&src=itinerary",
+      "rednote": "https://www.rednote.com/search_result?keyword=%E8%BE%BE%E8%8F%B2%E5%A5%BD%E5%8F%8B%E6%AC%A2%E5%BA%86%E5%A0%82&type=51",
+      "dish": "乐园餐",
+      "note": "探险岛上的餐厅（又名部落丰盛堂），午餐 / 晚餐选择；评分 4.2，营业 10:30-20:30。",
+      "day": 3,
+      "type": "餐厅",
+      "near": "上海迪士尼乐园"
     }
   ],
   "notes": [
