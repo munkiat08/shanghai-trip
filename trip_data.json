@@ -619,24 +619,25 @@
         },
         {
           "time": "10:00",
-          "name": "苏州恋爱博物馆",
+          "name": "平江路",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=120.632059%2C31.312416&name=%E8%8B%8F%E5%B7%9E%E6%81%8B%E7%88%B1%E5%8D%9A%E7%89%A9%E9%A6%86&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E8%8B%8F%E5%B7%9E%E6%81%8B%E7%88%B1%E5%8D%9A%E7%89%A9%E9%A6%86&type=51",
-          "tip": "平江路大儒巷店，开放 10:00-20:00。",
+          "amap": "https://uri.amap.com/marker?position=120.634556%2C31.313969&name=%E5%B9%B3%E6%B1%9F%E8%B7%AF&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E5%B9%B3%E6%B1%9F%E8%B7%AF&type=51",
+          "tip": "苏州的历史文化街区，沿河小巷，适合慢慢逛、拍照。",
           "transit": {
             "mode": "walk",
-            "detail": "从狮子林步行约 10 分钟",
-            "amap": "https://uri.amap.com/navigation?to=120.632059%2C31.312416&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.629095%2C31.321068"
+            "detail": "从狮子林步行前往",
+            "amap": "https://uri.amap.com/navigation?to=120.634556%2C31.313969&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.629095%2C31.321068"
           }
         },
         {
           "time": "13:00",
-          "name": "平江路 · 午餐",
+          "name": "午餐 · 平江路",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=120.634556%2C31.313969&name=%E5%B9%B3%E6%B1%9F%E8%B7%AF+%C2%B7+%E5%8D%88%E9%A4%90&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E5%B9%B3%E6%B1%9F%E8%B7%AF+%C2%B7+%E5%8D%88%E9%A4%90&type=51",
-          "tip": "苏州的历史文化街区，沿河小巷。午餐选择见美食页。"
+          "amap": "https://uri.amap.com/marker?position=120.634556%2C31.313969&name=%E5%8D%88%E9%A4%90+%C2%B7+%E5%B9%B3%E6%B1%9F%E8%B7%AF&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E5%8D%88%E9%A4%90+%C2%B7+%E5%B9%B3%E6%B1%9F%E8%B7%AF&type=51",
+          "tip": "在平江路上用午餐，选择见美食页。",
+          "kind": "meal"
         },
         {
           "time": "16:00",
