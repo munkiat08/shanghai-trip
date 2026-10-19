@@ -201,16 +201,16 @@ d = {"day": 4, "date": "2027-03-11", "label": "上海 → 苏州 · 虎丘 · �
          S("17:00", "七里山塘千年古街", "shantang", tip="千年古街，从虎丘码头上船，坐到山塘景区白居易码头（船 09:30-17:30，R50，坐左边；虎丘南门有卖票）。小吃和晚餐选择见美食页。",
            transit=T("transit", "虎丘码头上船到山塘景区白居易码头")),
          S("20:30", "回酒店 · " + XL, "xingle", kind="hotel", tripcom=trip_com_search_url(XL),
-           tip="明早 06:30 去双塔市集吃早餐。", transit=T("transit", "从山塘街返回平江路一带")),
+           tip="明早 09:00 出发去双塔市集吃早餐，可以睡个好觉。", transit=T("transit", "从山塘街返回平江路一带")),
      ]}
 days.append(d)
 
 # ---- Day 5  3/12
 d = {"day": 5, "date": "2027-03-12", "label": "双塔市集 · 拙政园 · 狮子林 · 平江路 · 金鸡湖",
-     "stay": STAY("xingle", XL, XL, "depart", "06:30"),
+     "stay": STAY("xingle", XL, XL, "depart", "09:00"),
      "stops": [
-         S("06:30", "双塔市集", "shuangta", tip="苏州人逛的早市，早餐选择见美食页。", transit=T("walk", "从酒店步行 10 分钟")),
-         S("07:00", "拙政园", "zzy", tip="苏州最大的古典园林，开放 07:30-17:30。",
+         S("09:00", "双塔市集", "shuangta", tip="苏州人逛的早市，早餐选择见美食页。", transit=T("walk", "从酒店步行 10 分钟")),
+         S("09:30", "拙政园", "zzy", tip="苏州最大的古典园林，开放 07:30-17:30。",
            sight_desc="园内走法见下面的路线。",
            group="拙政园走法", group_note="从入口到东门出口，一路逛完全园。",
            group_steps=[{"name": "拙政园入口", "note": ""}, {"name": "兰雪堂", "note": "取意李白诗句“独立天地间”"},
@@ -222,14 +222,14 @@ d = {"day": 5, "date": "2027-03-12", "label": "双塔市集 · 拙政园 · 狮�
                         {"name": "荷风四面亭", "note": ""}, {"name": "雪香云蔚亭", "note": ""}, {"name": "绿漪亭", "note": ""},
                         {"name": "东门出口", "note": ""}],
            transit=T("transit", "步行到临顿路站乘 6 号线往苏州新区火车站方向，坐 2 站到拙政园苏博站，1 号口出")),
-         S("09:00", "狮子林", "szl", tip="以假山著称的苏州园林。", transit=T("walk", "从拙政园步行可到")),
-         S("11:00", "平江路", "pingjiang", tip="苏州的历史文化街区，沿河小巷，适合慢慢逛、拍照。", transit=T("walk", "从狮子林步行前往")),
-         S("13:00", "午餐 · 平江路", "pingjiang", kind="meal", tip="在平江路上用午餐，选择见美食页。"),
-S("15:00", "月光码头", "moon", tip="金鸡湖东岸的游船码头，全年 09:30-21:00 开放，可坐船游湖。",
+         S("11:30", "狮子林", "szl", tip="以假山著称的苏州园林。", transit=T("walk", "从拙政园步行可到")),
+         S("13:00", "平江路", "pingjiang", tip="苏州的历史文化街区，沿河小巷，适合慢慢逛、拍照。", transit=T("walk", "从狮子林步行前往")),
+         S("14:00", "午餐 · 平江路", "pingjiang", kind="meal", tip="在平江路上用午餐，选择见美食页。"),
+S("16:00", "月光码头", "moon", tip="金鸡湖东岸的游船码头，全年 09:30-21:00 开放，可坐船游湖。",
            transit=T("transit", "从平江路前往金鸡湖东岸")),
-         S("16:00", "金鸡湖 · 东方之门", "orient", tip="园区的湖景和地标建筑。",
+         S("17:00", "金鸡湖 · 东方之门", "orient", tip="园区的湖景和地标建筑。",
            transit=T("taxi", "从月光码头打车前往东方之门")),
-         S("20:30", "回酒店 · " + XL, "xingle", kind="hotel", tripcom=trip_com_search_url(XL),
+         S("21:00", "回酒店 · " + XL, "xingle", kind="hotel", tripcom=trip_com_search_url(XL),
            tip="明早 07:30 吃早餐，08:30 出发去乌镇。", transit=T("transit", "地铁返回临顿路站")),
      ]}
 days.append(d)
