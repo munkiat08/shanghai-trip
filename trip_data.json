@@ -529,6 +529,20 @@
           }
         },
         {
+          "time": "18:30",
+          "name": "晚餐 · 沈万三 · 江南卤味（山塘街店）",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=120.598675%2C31.320475&name=%E6%99%9A%E9%A4%90+%C2%B7+%E6%B2%88%E4%B8%87%E4%B8%89+%C2%B7+%E6%B1%9F%E5%8D%97%E5%8D%A4%E5%91%B3%EF%BC%88%E5%B1%B1%E5%A1%98%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%99%9A%E9%A4%90+%C2%B7+%E6%B2%88%E4%B8%87%E4%B8%89+%C2%B7+%E6%B1%9F%E5%8D%97%E5%8D%A4%E5%91%B3%EF%BC%88%E5%B1%B1%E5%A1%98%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
+          "tip": "山塘街上的江南菜，晚餐吃清蒸白鱼、万三鲍鱼猪脚（红烧口味）、苏式三白、桂花糖藕；人均约 ¥54，营业 10:00-21:00。",
+          "kind": "meal",
+          "transit": {
+            "mode": "walk",
+            "detail": "在山塘街步行前往",
+            "amap": "https://uri.amap.com/navigation?to=120.598675%2C31.320475&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.602105%2C31.317059"
+          }
+        },
+        {
           "time": "20:30",
           "name": "回酒店 · 行乐酒店（苏州观前街平江路店）",
           "en": "",
@@ -539,7 +553,7 @@
           "transit": {
             "mode": "transit",
             "detail": "从山塘街返回平江路一带",
-            "amap": "https://uri.amap.com/navigation?to=120.63217%2C31.307549&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.602105%2C31.317059"
+            "amap": "https://uri.amap.com/navigation?to=120.63217%2C31.307549&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.598675%2C31.320475"
           },
           "tripcom": "https://www.trip.com/hotels/list?keyword=%E8%A1%8C%E4%B9%90%E9%85%92%E5%BA%97%EF%BC%88%E8%8B%8F%E5%B7%9E%E8%A7%82%E5%89%8D%E8%A1%97%E5%B9%B3%E6%B1%9F%E8%B7%AF%E5%BA%97%EF%BC%89"
         }
@@ -1460,7 +1474,7 @@
       "amap": "https://uri.amap.com/search?keyword=%E6%B2%88%E4%B8%87%E4%B8%89+%C2%B7+%E6%B1%9F%E5%8D%97%E5%8D%A4%E5%91%B3%EF%BC%88%E5%B1%B1%E5%A1%98%E8%A1%97%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E8%8B%8F%E5%B7%9E",
       "rednote": "https://www.rednote.com/search_result?keyword=%E6%B2%88%E4%B8%87%E4%B8%89+%C2%B7+%E6%B1%9F%E5%8D%97%E5%8D%A4%E5%91%B3%EF%BC%88%E5%B1%B1%E5%A1%98%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
       "dish": "清蒸白鱼、万三鲍鱼猪脚（红烧口味）、苏式三白、桂花糖藕",
-      "note": "山塘街上的江南菜，晚餐选择。",
+      "note": "山塘街上的江南菜，晚餐选择；人均约 ¥54，营业 10:00-21:00。",
       "day": 4,
       "type": "晚餐",
       "near": "七里山塘"
