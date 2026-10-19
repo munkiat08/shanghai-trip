@@ -822,7 +822,7 @@
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.478724%2C30.748313&name=%E5%8D%8A%E5%9F%8E%E7%BA%A2%E5%A6%86%E6%B1%89%E6%9C%8D%E4%BD%93%E9%AA%8C%E5%BA%97&coordinate=gaode&callnative=1&src=itinerary",
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%8D%8A%E5%9F%8E%E7%BA%A2%E5%A6%86%E6%B1%89%E6%9C%8D%E4%BD%93%E9%AA%8C%E5%BA%97&type=51",
-          "tip": "汉服自助体验店，慈云路 742 号。",
+          "tip": "汉服自助体验店，慈云路 742 号，24 小时营业；换上汉服逛西栅，晚上回来归还。",
           "transit": {
             "mode": "transit",
             "detail": "从西栅游客中心前往",
@@ -871,6 +871,19 @@
           }
         },
         {
+          "time": "19:30",
+          "name": "还汉服 · 半城红妆汉服体验店",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=120.478724%2C30.748313&name=%E8%BF%98%E6%B1%89%E6%9C%8D+%C2%B7+%E5%8D%8A%E5%9F%8E%E7%BA%A2%E5%A6%86%E6%B1%89%E6%9C%8D%E4%BD%93%E9%AA%8C%E5%BA%97&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E8%BF%98%E6%B1%89%E6%9C%8D+%C2%B7+%E5%8D%8A%E5%9F%8E%E7%BA%A2%E5%A6%86%E6%B1%89%E6%9C%8D%E4%BD%93%E9%AA%8C%E5%BA%97&type=51",
+          "tip": "晚上回店归还汉服，慈云路 742 号。",
+          "transit": {
+            "mode": "walk",
+            "detail": "从锦岸私房菜步行前往",
+            "amap": "https://uri.amap.com/navigation?to=120.478724%2C30.748313&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.48396%2C30.748806"
+          }
+        },
+        {
           "time": "20:30",
           "name": "回酒店 · 乌镇民宿",
           "en": "",
@@ -881,7 +894,7 @@
           "transit": {
             "mode": "walk",
             "detail": "景区内步行或乘游览车",
-            "amap": "https://uri.amap.com/navigation?to=120.489158%2C30.748054&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.48396%2C30.748806"
+            "amap": "https://uri.amap.com/navigation?to=120.489158%2C30.748054&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.478724%2C30.748313"
           },
           "tripcom": "https://www.trip.com/hotels/list?keyword=%E4%B9%8C%E9%95%87%E6%B0%91%E5%AE%BF"
         }
