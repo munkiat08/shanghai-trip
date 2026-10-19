@@ -1,10 +1,10 @@
 {
   "trip": {
-    "title": "上海 · 苏州 · 乌镇 · 杭州 10 天",
+    "title": "上海 · 苏州 · 乌镇 · 杭州 9 天",
     "eyebrow": "中国 · 华东",
     "lang": "cn",
     "theme": "ink",
-    "subtitle": "2027-03-08 – 2027-03-17 · 上海 - 苏州 - 乌镇 - 杭州 - 上海"
+    "subtitle": "2027-03-08 – 2027-03-16 · 上海 - 苏州 - 乌镇 - 杭州"
   },
   "days": [
     {
@@ -1020,19 +1020,24 @@
     {
       "day": 9,
       "date": "2027-03-16",
-      "label": "杭州 → 上海 · 豫园城隍庙夜景",
+      "label": "杭州早晨 → 打车直达浦东机场 → MH389 回吉隆坡",
+      "transit_hub": {
+        "name": "上海浦东国际机场",
+        "en": "Shanghai Pudong Airport",
+        "amap": "https://uri.amap.com/marker?position=121.809373%2C31.151164&name=%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&coordinate=gaode&callnative=1&src=itinerary"
+      },
       "stay": {
         "name": "嘉虹酒店（杭州西湖河坊街店）",
         "en": "",
         "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
         "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89",
         "event": "depart",
-        "time": "08:00",
-        "note": "10:30 前退房。"
+        "time": "07:00",
+        "note": "09:15 前退房。"
       },
       "stops": [
         {
-          "time": "08:00",
+          "time": "07:00",
           "name": "早餐 · 酒店附近",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E6%97%A9%E9%A4%90+%C2%B7+%E9%85%92%E5%BA%97%E9%99%84%E8%BF%91&coordinate=gaode&callnative=1&src=itinerary",
@@ -1041,12 +1046,12 @@
           "kind": "meal"
         },
         {
-          "time": "09:00",
+          "time": "07:45",
           "name": "大马弄 · 南宋街 · 河坊街",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.169086%2C30.234203&name=%E5%A4%A7%E9%A9%AC%E5%BC%84+%C2%B7+%E5%8D%97%E5%AE%8B%E8%A1%97+%C2%B7+%E6%B2%B3%E5%9D%8A%E8%A1%97&coordinate=gaode&callnative=1&src=itinerary",
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%A4%A7%E9%A9%AC%E5%BC%84+%C2%B7+%E5%8D%97%E5%AE%8B%E8%A1%97+%C2%B7+%E6%B2%B3%E5%9D%8A%E8%A1%97&type=51",
-          "tip": "吴山脚下的老街区，河坊街是杭州的老街。",
+          "tip": "吴山脚下的老街区，河坊街是杭州的老街；时间紧，逛一小圈。",
           "transit": {
             "mode": "walk",
             "detail": "从酒店步行",
@@ -1054,12 +1059,12 @@
           }
         },
         {
-          "time": "10:30",
+          "time": "09:15",
           "name": "回酒店退房 · 嘉虹酒店（杭州西湖河坊街店）",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E5%9B%9E%E9%85%92%E5%BA%97%E9%80%80%E6%88%BF+%C2%B7+%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%9B%9E%E9%85%92%E5%BA%97%E9%80%80%E6%88%BF+%C2%B7+%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
-          "tip": "取行李并退房。",
+          "tip": "取行李并退房，约 09:30 出发。",
           "kind": "hotel",
           "transit": {
             "mode": "walk",
@@ -1069,121 +1074,17 @@
           "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89"
         },
         {
-          "time": "11:00",
-          "name": "杭州东站",
+          "time": "09:30",
+          "name": "杭州 → 浦东机场",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=120.212605%2C30.290846&name=%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99&type=51",
-          "tip": "乘高铁去上海站。",
+          "amap": "https://uri.amap.com/marker?position=121.809373%2C31.151164&name=%E6%9D%AD%E5%B7%9E+%E2%86%92+%E6%B5%A6%E4%B8%9C%E6%9C%BA%E5%9C%BA&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E6%9D%AD%E5%B7%9E+%E2%86%92+%E6%B5%A6%E4%B8%9C%E6%9C%BA%E5%9C%BA&type=51",
+          "tip": "打车直达浦东机场，全程约 206 公里，不用换乘。",
           "kind": "transport",
           "transit": {
-            "mode": "transit",
-            "detail": "步行到定安路站乘 1 号线往萧山国际机场方向，坐 7 站到火车东站，约 30 分钟",
-            "amap": "https://uri.amap.com/navigation?to=120.212605%2C30.290846&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
-          }
-        },
-        {
-          "time": "12:30",
-          "name": "高铁 杭州东站 → 上海站",
-          "en": "",
-          "amap": "https://uri.amap.com/marker?position=121.455768%2C31.24965&name=%E9%AB%98%E9%93%81+%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99+%E2%86%92+%E4%B8%8A%E6%B5%B7%E7%AB%99&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E9%AB%98%E9%93%81+%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99+%E2%86%92+%E4%B8%8A%E6%B5%B7%E7%AB%99&type=51",
-          "tip": "12:30 的高铁到上海站。",
-          "kind": "transport",
-          "transit": {
-            "mode": "train",
-            "detail": "杭州东站 → 上海站",
-            "amap": "https://uri.amap.com/navigation?to=121.455768%2C31.24965&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.212605%2C30.290846"
-          }
-        },
-        {
-          "time": "14:30",
-          "name": "和颐至尊酒店（上海人民广场南京路步行街店）",
-          "en": "",
-          "amap": "https://uri.amap.com/marker?position=121.477775%2C31.235825&name=%E5%92%8C%E9%A2%90%E8%87%B3%E5%B0%8A%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E5%92%8C%E9%A2%90%E8%87%B3%E5%B0%8A%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
-          "tip": "官方入住 14:00 起，不含餐。浙江中路 379 号，电话 86-21-55696688。",
-          "kind": "hotel",
-          "transit": {
-            "mode": "transit",
-            "detail": "上海火车站（南广场）站乘隧道 3 线，坐 3 站到人民广场（广东站）下车，约 31 分钟",
-            "amap": "https://uri.amap.com/navigation?to=121.477775%2C31.235825&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.455768%2C31.24965"
-          },
-          "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%92%8C%E9%A2%90%E8%87%B3%E5%B0%8A%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%E5%BA%97%EF%BC%89"
-        },
-        {
-          "time": "19:00",
-          "name": "豫园 · 城隍庙",
-          "en": "",
-          "amap": "https://uri.amap.com/marker?position=121.492497%2C31.227714&name=%E8%B1%AB%E5%9B%AD+%C2%B7+%E5%9F%8E%E9%9A%8D%E5%BA%99&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E8%B1%AB%E5%9B%AD+%C2%B7+%E5%9F%8E%E9%9A%8D%E5%BA%99&type=51",
-          "tip": "豫园开放 09:00-16:00，门票 RMB 40；城隍庙建议晚上看夜景，开放 06:00-17:00。晚餐和小吃选择见美食页。",
-          "transit": {
-            "mode": "transit",
-            "detail": "从南京路一带前往豫园",
-            "amap": "https://uri.amap.com/navigation?to=121.492497%2C31.227714&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.477775%2C31.235825"
-          }
-        },
-        {
-          "time": "21:00",
-          "name": "回酒店 · 和颐至尊酒店（上海人民广场南京路步行街店）",
-          "en": "",
-          "amap": "https://uri.amap.com/marker?position=121.477775%2C31.235825&name=%E5%9B%9E%E9%85%92%E5%BA%97+%C2%B7+%E5%92%8C%E9%A2%90%E8%87%B3%E5%B0%8A%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E5%9B%9E%E9%85%92%E5%BA%97+%C2%B7+%E5%92%8C%E9%A2%90%E8%87%B3%E5%B0%8A%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%E5%BA%97%EF%BC%89&type=51",
-          "tip": "明早 08:00 去国际饭店西饼屋买蝴蝶酥，11:30 出发去机场。",
-          "kind": "hotel",
-          "transit": {
-            "mode": "transit",
-            "detail": "地铁返回人民广场",
-            "amap": "https://uri.amap.com/navigation?to=121.477775%2C31.235825&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.492497%2C31.227714"
-          },
-          "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%92%8C%E9%A2%90%E8%87%B3%E5%B0%8A%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%E5%BA%97%EF%BC%89"
-        }
-      ]
-    },
-    {
-      "day": 10,
-      "date": "2027-03-17",
-      "label": "国际饭店蝴蝶酥 → 浦东机场 → 回吉隆坡",
-      "transit_hub": {
-        "name": "上海浦东国际机场",
-        "en": "Shanghai Pudong Airport",
-        "amap": "https://uri.amap.com/marker?position=121.809373%2C31.151164&name=%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&coordinate=gaode&callnative=1&src=itinerary"
-      },
-      "stay": {
-        "name": "和颐至尊酒店（上海人民广场南京路步行街店）",
-        "en": "",
-        "amap": "https://uri.amap.com/marker?position=121.477775%2C31.235825&name=%E5%92%8C%E9%A2%90%E8%87%B3%E5%B0%8A%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
-        "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%92%8C%E9%A2%90%E8%87%B3%E5%B0%8A%E9%85%92%E5%BA%97%EF%BC%88%E4%B8%8A%E6%B5%B7%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%8D%97%E4%BA%AC%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97%E5%BA%97%EF%BC%89",
-        "event": "checkout",
-        "time": "11:00",
-        "note": "出发前退房。"
-      },
-      "stops": [
-        {
-          "time": "08:00",
-          "name": "国际饭店西饼屋",
-          "en": "",
-          "amap": "https://uri.amap.com/marker?position=121.471513%2C31.233654&name=%E5%9B%BD%E9%99%85%E9%A5%AD%E5%BA%97%E8%A5%BF%E9%A5%BC%E5%B1%8B&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E5%9B%BD%E9%99%85%E9%A5%AD%E5%BA%97%E8%A5%BF%E9%A5%BC%E5%B1%8B&type=51",
-          "tip": "国际饭店的老牌西点，蝴蝶酥是招牌。南京西路 170 号一带。",
-          "transit": {
-            "mode": "transit",
-            "detail": "从酒店前往南京西路"
-          }
-        },
-        {
-          "time": "11:30",
-          "name": "上海浦东国际机场",
-          "en": "",
-          "amap": "https://uri.amap.com/marker?position=121.809373%2C31.151164&name=%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA&type=51",
-          "tip": "出发去机场。",
-          "kind": "transport",
-          "transit": {
-            "mode": "transit",
-            "detail": "人民广场站乘 2 号线往浦东 1 号 2 号航站楼方向直达机场",
-            "amap": "https://uri.amap.com/navigation?to=121.809373%2C31.151164&mode=bus&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=121.477775%2C31.235825"
+            "mode": "taxi",
+            "detail": "走 S2 杭甬高速、G60、S32 申嘉湖高速，约 2 小时 36 分钟",
+            "amap": "https://uri.amap.com/navigation?to=121.809373%2C31.151164&mode=car&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
           }
         },
         {
@@ -1829,55 +1730,11 @@
       "day": 9,
       "type": "早餐",
       "near": "酒店附近"
-    },
-    {
-      "name": "外婆家（南京东路店）",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E5%A4%96%E5%A9%86%E5%AE%B6%EF%BC%88%E5%8D%97%E4%BA%AC%E4%B8%9C%E8%B7%AF%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E5%A4%96%E5%A9%86%E5%AE%B6%EF%BC%88%E5%8D%97%E4%BA%AC%E4%B8%9C%E8%B7%AF%E5%BA%97%EF%BC%89&type=51",
-      "dish": "红烧肉、桂花糯米藕、油爆虾",
-      "note": "南京东路 299 号；营业 10:30-21:30。",
-      "day": 9,
-      "type": "晚餐",
-      "near": "豫园 · 城隍庙"
-    },
-    {
-      "name": "光明邨大酒家",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E5%85%89%E6%98%8E%E9%82%A8%E5%A4%A7%E9%85%92%E5%AE%B6&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E5%85%89%E6%98%8E%E9%82%A8%E5%A4%A7%E9%85%92%E5%AE%B6&type=51",
-      "dish": "鲜肉月饼",
-      "note": "上海老字号。",
-      "day": 9,
-      "type": "晚餐",
-      "near": "豫园 · 城隍庙"
-    },
-    {
-      "name": "小杨生煎（人民广场店）",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E5%B0%8F%E6%9D%A8%E7%94%9F%E7%85%8E%EF%BC%88%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%BA%97%EF%BC%89&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E5%B0%8F%E6%9D%A8%E7%94%9F%E7%85%8E%EF%BC%88%E4%BA%BA%E6%B0%91%E5%B9%BF%E5%9C%BA%E5%BA%97%EF%BC%89&type=51",
-      "dish": "生煎包",
-      "note": "营业 08:00-21:00。",
-      "day": 9,
-      "type": "小吃",
-      "near": "豫园 · 城隍庙"
-    },
-    {
-      "name": "国际饭店西饼屋",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E5%9B%BD%E9%99%85%E9%A5%AD%E5%BA%97%E8%A5%BF%E9%A5%BC%E5%B1%8B&callnative=1&src=itinerary&city=%E4%B8%8A%E6%B5%B7",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E5%9B%BD%E9%99%85%E9%A5%AD%E5%BA%97%E8%A5%BF%E9%A5%BC%E5%B1%8B&type=51",
-      "dish": "蝴蝶酥",
-      "note": "国际饭店老牌西点，蝴蝶酥是招牌。",
-      "day": 10,
-      "type": "小吃",
-      "near": "国际饭店"
     }
   ],
   "notes": [
     {
-      "text": "✈ 航班\n• 3/8 MH388 08:55 吉隆坡 → 上海浦东，14:15 抵达\n• 3/17 MH389 15:25 上海浦东 → 吉隆坡（21:00 抵达），11:30 出发去机场"
+      "text": "✈ 航班\n• 3/8 MH388 08:55 吉隆坡 → 上海浦东，14:15 抵达\n• 3/16 MH389 15:25 上海浦东 → 吉隆坡（21:00 抵达），09:30 从杭州打车直达机场"
     },
     {
       "text": "🏨 住宿\n• 3/8-3/11 嘉虹酒店（川沙地铁站店），不含餐，电话 86-21-55698958\n• 3/11-3/13 行乐酒店（苏州观前街平江路店），不含餐，赠手作小点心，电话 86-19047038197\n• 3/13-3/14 乌镇民宿，含 2 人早餐，电话 86-573-88731666\n• 3/14-3/16 嘉虹酒店（杭州西湖河坊街店），含 2 人早餐，电话 86-571-85056880\n• 3/16-3/17 和颐至尊酒店（上海人民广场南京路步行街店），不含餐，电话 86-21-55696688"
@@ -1889,10 +1746,6 @@
     {
       "text": "👘 宫宴汉服妆造\n• 地址：上海市静安区北京西路 1485 号 1 栋，10:00-11:30 到店\n• 基础 RMB 100（汉服加古风发型），高级 RMB 200（加古风妆容），花神 RMB 400（花神汉服、发型、妆容）\n• 摄影 RMB 498：30 分钟，4 张精修，底片全送\n• 选浅色系衣服，提前想好朝代，建议自己化妆",
       "day": 2
-    },
-    {
-      "text": "🏯 豫园与城隍庙\n• 豫园周一闭园，今年 3 月 16 日是周二，可以进园\n• 城隍庙里的小吃价钱偏贵，不建议买",
-      "day": 9
     },
     {
       "text": "🎢 迪士尼\n• 必玩：创极光速轮、小矮人矿山车、加勒比海盗、飞跃地平线（坐中间位置）、巴斯光年\n• 演出：10:00 蜂蜜罐罐，11:40 童话书，15:30 米奇专列花车巡游，14:13 / 18:15 七宝奇幻冬日巡游，21:15 烟花秀",
