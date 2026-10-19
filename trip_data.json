@@ -898,7 +898,7 @@
         "tripcom": "https://www.trip.com/hotels/list?keyword=%E4%B9%8C%E9%95%87%E6%B0%91%E5%AE%BF",
         "event": "depart",
         "time": "06:50",
-        "note": "12:00 前退房。乌镇民宿提供行李运送服务（09:00-18:00）。"
+        "note": "09:30 前退房。乌镇民宿提供行李运送服务（09:00-18:00）。"
       },
       "stops": [
         {
@@ -916,7 +916,7 @@
           }
         },
         {
-          "time": "09:00",
+          "time": "08:30",
           "name": "乌镇 · 清晨漫步",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.484263%2C30.75027&name=%E4%B9%8C%E9%95%87+%C2%B7+%E6%B8%85%E6%99%A8%E6%BC%AB%E6%AD%A5&coordinate=gaode&callnative=1&src=itinerary",
@@ -924,16 +924,17 @@
           "tip": "走走拍拍清晨的美景。"
         },
         {
-          "time": "11:00",
-          "name": "午餐 · 退房",
+          "time": "09:30",
+          "name": "退房 · 乌镇民宿",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=120.489158%2C30.748054&name=%E5%8D%88%E9%A4%90+%C2%B7+%E9%80%80%E6%88%BF&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E5%8D%88%E9%A4%90+%C2%B7+%E9%80%80%E6%88%BF&type=51",
-          "tip": "提早吃午餐，办理退房。",
-          "kind": "meal"
+          "amap": "https://uri.amap.com/marker?position=120.489158%2C30.748054&name=%E9%80%80%E6%88%BF+%C2%B7+%E4%B9%8C%E9%95%87%E6%B0%91%E5%AE%BF&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E9%80%80%E6%88%BF+%C2%B7+%E4%B9%8C%E9%95%87%E6%B0%91%E5%AE%BF&type=51",
+          "tip": "办理退房，行李可交给民宿运送。",
+          "kind": "hotel",
+          "tripcom": "https://www.trip.com/hotels/list?keyword=%E4%B9%8C%E9%95%87%E6%B0%91%E5%AE%BF"
         },
         {
-          "time": "12:00",
+          "time": "10:00",
           "name": "乌镇 → 杭州",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E4%B9%8C%E9%95%87+%E2%86%92+%E6%9D%AD%E5%B7%9E&coordinate=gaode&callnative=1&src=itinerary",
@@ -947,7 +948,7 @@
           }
         },
         {
-          "time": "13:30",
+          "time": "11:15",
           "name": "嘉虹酒店（杭州西湖河坊街店）",
           "en": "",
           "amap": "https://uri.amap.com/marker?position=120.170557%2C30.243976&name=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89&coordinate=gaode&callnative=1&src=itinerary",
@@ -962,6 +963,20 @@
           "tripcom": "https://www.trip.com/hotels/list?keyword=%E5%98%89%E8%99%B9%E9%85%92%E5%BA%97%EF%BC%88%E6%9D%AD%E5%B7%9E%E8%A5%BF%E6%B9%96%E6%B2%B3%E5%9D%8A%E8%A1%97%E5%BA%97%EF%BC%89"
         },
         {
+          "time": "12:00",
+          "name": "午餐 · 河坊街",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=120.169895%2C30.240584&name=%E5%8D%88%E9%A4%90+%C2%B7+%E6%B2%B3%E5%9D%8A%E8%A1%97&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E5%8D%88%E9%A4%90+%C2%B7+%E6%B2%B3%E5%9D%8A%E8%A1%97&type=51",
+          "tip": "河坊街一带的杭州小吃街，午餐和小吃选择见美食页。",
+          "kind": "meal",
+          "transit": {
+            "mode": "walk",
+            "detail": "从酒店步行前往",
+            "amap": "https://uri.amap.com/navigation?to=120.169895%2C30.240584&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
+          }
+        },
+        {
           "time": "14:30",
           "name": "钱王祠码头",
           "en": "",
@@ -971,7 +986,7 @@
           "transit": {
             "mode": "bike",
             "detail": "从酒店骑行或打车",
-            "amap": "https://uri.amap.com/navigation?to=120.15607%2C30.242495&mode=ride&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.170557%2C30.243976"
+            "amap": "https://uri.amap.com/navigation?to=120.15607%2C30.242495&mode=ride&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.169895%2C30.240584"
           }
         },
         {
