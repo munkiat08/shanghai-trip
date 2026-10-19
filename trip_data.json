@@ -975,6 +975,19 @@
           }
         },
         {
+          "time": "14:00",
+          "name": "苏堤",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=120.13796%2C30.24388&name=%E8%8B%8F%E5%A0%A4&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E8%8B%8F%E5%A0%A4&type=51",
+          "tip": "西湖里的长堤，沿堤走路、看湖景，是西湖十景之一的苏堤春晓。",
+          "transit": {
+            "mode": "walk",
+            "detail": "从曲院风荷步行前往",
+            "amap": "https://uri.amap.com/navigation?to=120.13796%2C30.24388&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.133333%2C30.249287"
+          }
+        },
+        {
           "time": "15:00",
           "name": "太子湾公园",
           "en": "",
@@ -982,9 +995,9 @@
           "rednote": "https://www.rednote.com/search_result?keyword=%E5%A4%AA%E5%AD%90%E6%B9%BE%E5%85%AC%E5%9B%AD&type=51",
           "tip": "西湖南边的公园，全天开放。",
           "transit": {
-            "mode": "taxi",
-            "detail": "从曲院风荷打车前往",
-            "amap": "https://uri.amap.com/navigation?to=120.142177%2C30.22547&mode=car&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.133333%2C30.249287"
+            "mode": "walk",
+            "detail": "沿苏堤向南走，再前往太子湾公园",
+            "amap": "https://uri.amap.com/navigation?to=120.142177%2C30.22547&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.13796%2C30.24388"
           }
         },
         {
