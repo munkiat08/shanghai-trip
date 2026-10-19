@@ -843,6 +843,20 @@
           }
         },
         {
+          "time": "12:30",
+          "name": "午餐 · 书生羊肉面",
+          "en": "",
+          "amap": "https://uri.amap.com/marker?position=120.485538%2C30.748443&name=%E5%8D%88%E9%A4%90+%C2%B7+%E4%B9%A6%E7%94%9F%E7%BE%8A%E8%82%89%E9%9D%A2&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E5%8D%88%E9%A4%90+%C2%B7+%E4%B9%A6%E7%94%9F%E7%BE%8A%E8%82%89%E9%9D%A2&type=51",
+          "tip": "乌镇西栅大街 220 号的羊肉面，午餐吃羊肉面，可以尝试羊肚；人均约 ¥54，营业 07:00-22:00。",
+          "kind": "meal",
+          "transit": {
+            "mode": "walk",
+            "detail": "在西栅景区内步行前往",
+            "amap": "https://uri.amap.com/navigation?to=120.485538%2C30.748443&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.484263%2C30.75027"
+          }
+        },
+        {
           "time": "20:30",
           "name": "回酒店 · 乌镇民宿",
           "en": "",
@@ -853,7 +867,7 @@
           "transit": {
             "mode": "walk",
             "detail": "景区内步行或乘游览车",
-            "amap": "https://uri.amap.com/navigation?to=120.489158%2C30.748054&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.484263%2C30.75027"
+            "amap": "https://uri.amap.com/navigation?to=120.489158%2C30.748054&mode=walk&policy=1&coordinate=gaode&callnative=1&src=itinerary&from=120.485538%2C30.748443"
           },
           "tripcom": "https://www.trip.com/hotels/list?keyword=%E4%B9%8C%E9%95%87%E6%B0%91%E5%AE%BF"
         }
@@ -1556,17 +1570,6 @@
       "near": "乌镇景区"
     },
     {
-      "name": "吴妈馄饨",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E5%90%B4%E5%A6%88%E9%A6%84%E9%A5%A8&callnative=1&src=itinerary&city=%E5%98%89%E5%85%B4",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E5%90%B4%E5%A6%88%E9%A6%84%E9%A5%A8&type=51",
-      "dish": "野菜馄饨、三鲜馄饨",
-      "note": "乌镇馄饨；营业 13:00-20:30。",
-      "day": 6,
-      "type": "餐厅",
-      "near": "乌镇景区"
-    },
-    {
       "name": "锦记糕点铺",
       "en": "",
       "amap": "https://uri.amap.com/search?keyword=%E9%94%A6%E8%AE%B0%E7%B3%95%E7%82%B9%E9%93%BA&callnative=1&src=itinerary&city=%E5%98%89%E5%85%B4",
@@ -1583,18 +1586,7 @@
       "amap": "https://uri.amap.com/search?keyword=%E4%B9%A6%E7%94%9F%E7%BE%8A%E8%82%89%E9%9D%A2&callnative=1&src=itinerary&city=%E5%98%89%E5%85%B4",
       "rednote": "https://www.rednote.com/search_result?keyword=%E4%B9%A6%E7%94%9F%E7%BE%8A%E8%82%89%E9%9D%A2&type=51",
       "dish": "羊肉面（可尝试羊肚）",
-      "note": "乌镇面馆；营业 10:00-22:00。",
-      "day": 6,
-      "type": "餐厅",
-      "near": "乌镇景区"
-    },
-    {
-      "name": "乌镇酱鸭店",
-      "en": "",
-      "amap": "https://uri.amap.com/search?keyword=%E4%B9%8C%E9%95%87%E9%85%B1%E9%B8%AD%E5%BA%97&callnative=1&src=itinerary&city=%E5%98%89%E5%85%B4",
-      "rednote": "https://www.rednote.com/search_result?keyword=%E4%B9%8C%E9%95%87%E9%85%B1%E9%B8%AD%E5%BA%97&type=51",
-      "dish": "酱鸭",
-      "note": "乌镇酱鸭；营业 12:00-21:00。",
+      "note": "西栅大街 220 号的羊肉面馆，午餐选择；人均约 ¥54，营业 07:00-22:00。",
       "day": 6,
       "type": "餐厅",
       "near": "乌镇景区"
