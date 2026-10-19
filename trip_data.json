@@ -1187,12 +1187,12 @@
           }
         },
         {
-          "time": "16:05",
-          "name": "航班 上海 → 吉隆坡",
+          "time": "15:25",
+          "name": "航班 MH389 上海 → 吉隆坡",
           "en": "",
-          "amap": "https://uri.amap.com/marker?position=121.809373%2C31.151164&name=%E8%88%AA%E7%8F%AD+%E4%B8%8A%E6%B5%B7+%E2%86%92+%E5%90%89%E9%9A%86%E5%9D%A1&coordinate=gaode&callnative=1&src=itinerary",
-          "rednote": "https://www.rednote.com/search_result?keyword=%E8%88%AA%E7%8F%AD+%E4%B8%8A%E6%B5%B7+%E2%86%92+%E5%90%89%E9%9A%86%E5%9D%A1&type=51",
-          "tip": "16:05 的航班回吉隆坡。",
+          "amap": "https://uri.amap.com/marker?position=121.809373%2C31.151164&name=%E8%88%AA%E7%8F%AD+MH389+%E4%B8%8A%E6%B5%B7+%E2%86%92+%E5%90%89%E9%9A%86%E5%9D%A1&coordinate=gaode&callnative=1&src=itinerary",
+          "rednote": "https://www.rednote.com/search_result?keyword=%E8%88%AA%E7%8F%AD+MH389+%E4%B8%8A%E6%B5%B7+%E2%86%92+%E5%90%89%E9%9A%86%E5%9D%A1&type=51",
+          "tip": "马来西亚航空 MH389，15:25 从浦东起飞，21:00 抵达吉隆坡。",
           "kind": "transport"
         }
       ]
@@ -1877,7 +1877,7 @@
   ],
   "notes": [
     {
-      "text": "✈ 航班\n• 3/8 08:55 吉隆坡 → 上海浦东，14:15 抵达\n• 3/17 16:05 上海 → 吉隆坡，11:30 出发去机场"
+      "text": "✈ 航班\n• 3/8 08:55 吉隆坡 → 上海浦东，14:15 抵达\n• 3/17 MH389 15:25 上海浦东 → 吉隆坡（21:00 抵达），11:30 出发去机场"
     },
     {
       "text": "🏨 住宿\n• 3/8-3/11 嘉虹酒店（川沙地铁站店），不含餐，电话 86-21-55698958\n• 3/11-3/13 行乐酒店（苏州观前街平江路店），不含餐，赠手作小点心，电话 86-19047038197\n• 3/13-3/14 乌镇民宿，含 2 人早餐，电话 86-573-88731666\n• 3/14-3/16 嘉虹酒店（杭州西湖河坊街店），含 2 人早餐，电话 86-571-85056880\n• 3/16-3/17 和颐至尊酒店（上海人民广场南京路步行街店），不含餐，电话 86-21-55696688"
