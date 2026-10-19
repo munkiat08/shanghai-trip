@@ -32,7 +32,7 @@ OUT = HERE / "itinerary" / "shanghai-itinerary.html"
 COPY_TO = None  # everything stays inside the repo folder
 ROUTE_MODE = {"taxi": "car", "drive": "car", "transit": "bus", "train": "bus", "walk": "walk", "bike": "ride"}
 STALE = "⚠️上一站已改,用时未重新核实:"
-CITY = {}  # day -> city for Amap search stubs, e.g. {1: "上海"}
+CITY = {1: "上海", 2: "上海", 3: "上海", 4: "苏州", 5: "苏州", 6: "嘉兴", 7: "杭州", 8: "杭州", 9: "杭州", 10: "上海"}  # day -> city for Amap search stubs
 
 
 def coords(url):
