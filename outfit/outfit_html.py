@@ -106,11 +106,15 @@ CSS = """
 """
 
 
+KEEP_ORIGINAL = {"day05"}  # shown at its original 896x1200 size
+
+
 def photo(stem):
     OUT_IMG.mkdir(parents=True, exist_ok=True)
     src = next(p for p in (HERE / "outfit_images").glob(stem + ".*"))
     im = Image.open(src).convert("RGB")
-    im.thumbnail((720, 1080))
+    if stem not in KEEP_ORIGINAL:
+        im.thumbnail((720, 1080))
     im.save(OUT_IMG / f"{stem}.jpg", "JPEG", quality=82, optimize=True)
     return f"images/outfit/{stem}.jpg"
 
