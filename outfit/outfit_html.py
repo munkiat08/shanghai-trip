@@ -106,13 +106,50 @@ CSS = """
 """
 
 
+import numpy as np
+
+
+def remove_star(im):
+    """Remove the 4-point sparkle watermark in the bottom-right corner (896x1200 originals):
+    clone a nearby clean patch under a feathered star-shaped mask, picking the offset whose border matches best."""
+    if im.size != (896, 1200):
+        return im
+    a = np.asarray(im).astype(np.float32)
+    cx, cy, r = 840.0, 1143.5, 31.0
+    ys, xs = np.mgrid[1100:1190, 800:890]
+    u, v = np.abs(xs - cx) / r, np.abs(ys - cy) / r
+    mask = (u ** (2 / 3) + v ** (2 / 3)) <= 1.0          # astroid = 4-point star
+    # grow the mask a little, then feather
+    m = mask.astype(np.float32)
+    for _ in range(3):
+        m = np.maximum.reduce([m, np.roll(m, 1, 0), np.roll(m, -1, 0), np.roll(m, 1, 1), np.roll(m, -1, 1)])
+    soft = m.copy()
+    for _ in range(2):
+        soft = (soft + np.roll(soft, 1, 0) + np.roll(soft, -1, 0) + np.roll(soft, 1, 1) + np.roll(soft, -1, 1)) / 5
+    ring = (m > 0) & ~mask
+    best = None
+    for dx, dy in [(-70, 0), (0, -70), (-70, -70), (-90, 0), (0, -90), (70, 0)]:
+        src = a[1100 + dy:1190 + dy, 800 + dx:890 + dx]
+        if src.shape[:2] != (90, 90):
+            continue
+        err = float(np.abs(src - a[1100:1190, 800:890])[ring].mean())
+        if best is None or err < best[0]:
+            best = (err, src)
+    if best is None:
+        return im
+    src = best[1]
+    out = a.copy()
+    out[1100:1190, 800:890] = a[1100:1190, 800:890] * (1 - soft[..., None]) + src * soft[..., None]
+    return Image.fromarray(out.clip(0, 255).astype(np.uint8))
+
+
 KEEP_ORIGINAL = {"day05"}  # shown at its original 896x1200 size
 
 
 def photo(stem):
     OUT_IMG.mkdir(parents=True, exist_ok=True)
     src = next(p for p in (HERE / "outfit_images").glob(stem + ".*"))
-    im = Image.open(src).convert("RGB")
+    im = remove_star(Image.open(src).convert("RGB"))
     if stem not in KEEP_ORIGINAL:
         im.thumbnail((720, 1080))
     im.save(OUT_IMG / f"{stem}.jpg", "JPEG", quality=82, optimize=True)
