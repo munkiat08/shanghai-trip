@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Standalone outfit page: public/outfit.html (+ compressed photos in public/images/outfit/).
-Run from anywhere:  python outfit/outfit_html.py
+"""Builds the 穿搭 tab fragment (outfit/outfit_panel.html) + compressed photos in public/images/outfit/.
+Run from anywhere before theme_palette.py:  python outfit/outfit_html.py
 Photos come from outfit/outfit_images/ (originals, any format); each is resized to 720 px wide JPEG."""
 import html
+import json
 from pathlib import Path
 
 from PIL import Image
@@ -82,35 +83,26 @@ NOTE = ("按女生 170 cm 的身材写，外套长度和裤型是通用的比例
         "每天的人物图是 AI 生成的示意图，不是实拍；第 6 天汉服是在乌镇半城红妆店租的，实际款式以店里为准。")
 
 CSS = """
-:root{--paper:#E9E7EF;--panel:#F8F6F9;--ink:#1E1E33;--ink-soft:#5C5B75;--line:#D8D4E0;--accent:#984063;--accent-ink:#7A3050;--accent-soft:#FDE8E0;--sky:#41436A;--coral:#F64668;--peach:#FE9677;color-scheme:light}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:14px 'Manrope',-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;padding:0 16px;line-height:1.7}
-.wrap{max-width:640px;margin:0 auto;padding-block:28px 60px}
-.serif{font-family:'Noto Serif SC','Songti SC',serif}.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
-.back{display:inline-block;margin-bottom:10px;font-size:13px;font-weight:600;color:var(--sky);text-decoration:none}
-.hero{padding-block:8px 20px;border-bottom:2px solid var(--peach);margin-bottom:18px}
-.eyebrow{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:600;text-transform:uppercase}
-.hero h1{font-size:30px;font-weight:700;margin:10px 0 8px;color:var(--accent-ink);text-wrap:balance}.hero p{color:var(--ink-soft);font-size:14px;margin:0}
-.navrow{position:sticky;top:0;display:flex;gap:8px;overflow-x:auto;padding:10px 0;margin:0 0 22px;background:var(--paper);border-bottom:1px solid var(--line);z-index:5;-webkit-overflow-scrolling:touch}
-.navrow a{flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;color:var(--ink-soft);background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:7px 14px;text-decoration:none;white-space:nowrap}
-.navrow a:hover{color:#fff;background:var(--sky);border-color:var(--sky)}
-.day{margin-bottom:44px;scroll-margin-top:56px}
-.day-head{display:flex;align-items:baseline;gap:14px;margin-bottom:4px;flex-wrap:wrap}
-.day-num{font-size:34px;font-weight:600;color:var(--coral);line-height:1}.day-title{font-size:20px;font-weight:700;flex:1 1 auto;min-width:0;margin:0}
-.day-meta{color:var(--ink-soft);font-size:12px;margin:0 0 16px}
-.shots{display:flex;gap:10px;margin:0 0 14px}.shots figure{margin:0;flex:1 1 0;min-width:0}.shots-1 figure{flex:0 1 320px}.shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line)}.shots figcaption{font:600 11px 'IBM Plex Mono',monospace;color:var(--ink-soft);margin-top:6px}
-.looks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
-.look-item{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 12px 11px}
-.look-item:last-child:nth-child(odd){grid-column:1/-1}
-.swatch{width:22px;height:22px;border-radius:6px;border:1px solid rgba(0,0,0,.12);margin-bottom:8px}
-.look-cat{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--ink-soft);margin-bottom:3px}
-.look-desc{font-size:13px;font-weight:500}
-.palette{display:flex;height:8px;border-radius:4px;overflow:hidden;margin-bottom:16px;border:1px solid var(--line)}.palette span{flex:1}
-.tip{font-family:'Noto Serif SC',serif;font-size:14px;color:var(--ink-soft);border-left:3px solid var(--peach);padding-left:12px;margin:0}
-.pack{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:8px}
-.pack h2{font-size:16px;margin:0 0 10px;color:var(--accent-ink)}.pack ul{margin:0;padding-left:18px;font-size:14px;color:var(--ink-soft)}.pack li{margin-bottom:6px}
-.note{font-size:12px;color:var(--ink-soft);margin-top:28px;padding-top:16px;border-top:1px solid var(--line)}
-@media (max-width:420px){.looks{grid-template-columns:1fr}.hero h1{font-size:26px}}
+#panel-outfit .of-card{background:var(--surface,#fff);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:6px}
+#panel-outfit .of-meta{color:var(--ink-soft);font-size:12.5px;margin:0 0 10px}
+#panel-outfit .of-shots{display:flex;gap:10px;margin:0 0 12px}
+#panel-outfit .of-shots figure{margin:0;flex:1 1 0;min-width:0}
+#panel-outfit .of-shots-1 figure{flex:0 1 320px}
+#panel-outfit .of-shots img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--line)}
+#panel-outfit .of-shots figcaption{font-size:12.5px;font-weight:600;color:var(--ink-soft);margin-top:6px}
+#panel-outfit .of-looks{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+#panel-outfit .of-item{background:var(--surface-2,#f4f4f4);border-radius:10px;padding:10px 11px}
+#panel-outfit .of-item:last-child:nth-child(odd){grid-column:1/-1}
+#panel-outfit .of-sw{width:20px;height:20px;border-radius:6px;border:1px solid rgba(0,0,0,.12);margin-bottom:6px}
+#panel-outfit .of-cat{font-size:12.5px;color:var(--ink-soft);margin-bottom:2px}
+#panel-outfit .of-desc{font-size:14px;font-weight:500;line-height:1.55}
+#panel-outfit .of-pal{display:flex;height:8px;border-radius:4px;overflow:hidden;margin-bottom:12px;border:1px solid var(--line)}
+#panel-outfit .of-pal span{flex:1}
+#panel-outfit .of-tip{font-size:14px;color:var(--ink-soft);border-left:3px solid #FE9677;padding-left:12px;margin:0}
+#panel-outfit .of-pack ul{margin:6px 0 0;padding-left:18px;font-size:14px;color:var(--ink-soft)}
+#panel-outfit .of-pack li{margin-bottom:6px}
+#panel-outfit .of-note{font-size:12.5px;color:var(--ink-soft);margin:14px 0 0}
+@media (max-width:420px){#panel-outfit .of-looks{grid-template-columns:1fr}}
 """
 
 
@@ -128,40 +120,26 @@ def shots_html(shots):
         f'<figure><img src="{photo(s)}" alt="{html.escape(cap or "当天穿搭示意图")}" loading="lazy">'
         + (f"<figcaption>{html.escape(cap)}</figcaption>" if cap else "") + "</figure>"
         for s, cap in shots)
-    return f'<div class="shots shots-{len(shots)}">{figs}</div>'
+    return f'<div class="of-shots of-shots-{len(shots)}">{figs}</div>'
 
 
-nav = "".join(f'<a href="#day{n}">第{int(n)}天 {d}</a>' for n, d, *_ in DAYS)
+LABEL = {d["day"]: d["label"] for d in json.loads((HERE.parent / "trip_data.json").read_text(encoding="utf-8"))["days"]}
 secs = []
 for n, date, title, meta, looks, pal, tip, shots in DAYS:
+    k = int(n)
     items = "".join(
-        f'<div class="look-item"><div class="swatch" style="background:{c}"></div>'
-        f'<div class="look-cat">{html.escape(cat)}</div><div class="look-desc">{html.escape(d)}</div></div>'
+        f'<div class="of-item"><div class="of-sw" style="background:{c}"></div>'
+        f'<div class="of-cat">{html.escape(cat)}</div><div class="of-desc">{html.escape(d)}</div></div>'
         for cat, d, c in looks)
     bar = "".join(f'<span style="background:{c}"></span>' for c in pal)
+    mm, dd = date.split("/")
     secs.append(
-        f'  <section class="day" id="day{n}">\n'
-        f'    <div class="day-head"><span class="day-num mono">{n}</span><h2 class="day-title serif">{html.escape(title)}</h2></div>\n'
-        f'    <p class="day-meta mono">{date} · {html.escape(meta)}</p>\n'
-        f'    {shots_html(shots)}\n'
-        f'    <div class="looks">{items}</div>\n'
-        f'    <div class="palette">{bar}</div>\n'
-        f'    <p class="tip">{html.escape(tip)}</p>\n'
-        f'  </section>')
+        f'<p class="day-head" id="outfit-day-{k}">第{k}天 · {int(mm):02d}/{int(dd):02d} · {html.escape(LABEL.get(k, title))}</p>'
+        f'<div class="of-card"><p class="of-meta">{html.escape(meta)}</p>{shots_html(shots)}'
+        f'<div class="of-looks">{items}</div><div class="of-pal">{bar}</div><p class="of-tip">{html.escape(tip)}</p></div>')
 pack = "".join(f"<li>{html.escape(x)}</li>" for x in PACK)
-page = (
-    '<!doctype html><html lang="zh"><head><meta charset="utf-8">'
-    '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>上海苏州乌镇杭州九日穿搭</title>\n'
-    '<meta name="theme-color" content="#41436A">\n'
-    '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-    '<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">\n'
-    f"<style>{CSS}</style></head><body>\n<div class=\"wrap\">\n"
-    '  <a class="back" href="./">← 返回行程</a>\n'
-    '  <div class="hero"><div class="eyebrow">Shanghai · Suzhou · Wuzhen · Hangzhou · March OOTD</div>\n'
-    '    <h1 class="serif">上海苏州乌镇杭州 九日穿搭</h1>\n'
-    "    <p>女生 170 cm · 3/8–3/16 · 早晚凉、多细雨 · 拍照出片 —— 按往年气候估计，不是预报，出发前一周再看实际天气</p></div>\n"
-    f'  <nav class="navrow">{nav}</nav>\n' + "\n".join(secs) + "\n"
-    f'  <div class="pack"><h2 class="serif">打包建议</h2><ul>{pack}</ul></div>\n'
-    f'  <p class="note">{NOTE}</p>\n</div></body></html>')
-(PUB / "outfit.html").write_text(page, encoding="utf-8")
-print("saved public/outfit.html", len(page))
+frag = (f"<style>{CSS}</style>" + "".join(secs)
+        + f'<p class="day-head">打包建议</p><div class="of-card of-pack"><ul>{pack}</ul></div>'
+        + f'<p class="of-note">{html.escape(NOTE)}</p>')
+(HERE / "outfit_panel.html").write_text(frag, encoding="utf-8")
+print("saved outfit/outfit_panel.html", len(frag))

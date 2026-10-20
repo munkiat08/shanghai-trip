@@ -62,8 +62,7 @@ CSS = r"""
 
   body.theme-ink .panels{background-image:url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%27260%27%20height=%27260%27%20viewBox=%270%200%20260%20260%27%20fill=%27none%27%20stroke=%27%2341436A%27%20stroke-width=%271.6%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%3E%3Cg%20opacity=%27.12%27%3E%3Cg%20transform=%27translate(48%2056)%27%3E%3C%21--%20Oriental%20Pearl%20Tower%20--%3E%3Cpath%20d=%27M0%20-50V30%27/%3E%3Ccircle%20cx=%270%27%20cy=%27-22%27%20r=%275%27/%3E%3Ccircle%20cx=%270%27%20cy=%270%27%20r=%279%27%20fill=%27%2341436A%27%20fill-opacity=%27.25%27/%3E%3Ccircle%20cx=%270%27%20cy=%2722%27%20r=%275%27/%3E%3Cpath%20d=%27M-12%2044L-2%2028M12%2044L2%2028M0%2028V44%27/%3E%3C/g%3E%3Cg%20transform=%27translate(190%2056)%27%3E%3C%21--%20xiaolongbao%20--%3E%3Cpath%20d=%27M-20%206Q-22%20-14%200%20-16Q22%20-14%2020%206Q0%2014%20-20%206Z%27%20fill=%27%2341436A%27%20fill-opacity=%27.12%27/%3E%3Cpath%20d=%27M0%20-16V-8M-8%20-14L-5%20-6M8%20-14L5%20-6M-14%20-10L-9%20-3M14%20-10L9%20-3%27/%3E%3Cpath%20d=%27M-8%20-26q-4%20-5%200%20-9M2%20-26q-4%20-5%200%20-9M12%20-26q-4%20-5%200%20-9%27/%3E%3C/g%3E%3Cg%20transform=%27translate(52%20184)%27%3E%3C%21--%20Lujiazui:%20Jin%20Mao%20%2B%20SWFC%20--%3E%3Cpath%20d=%27M-30%2034V-10H-18V-18H-10V-28H-4V34M-30%2034H0%27/%3E%3Cpath%20d=%27M10%2034V-26L24%20-34L30%20-26V34Z%27/%3E%3Cpath%20d=%27M17%20-14L23%20-14L20%20-4Z%27%20fill=%27%2341436A%27%20fill-opacity=%27.3%27/%3E%3C/g%3E%3Cg%20transform=%27translate(190%20180)%27%3E%3C%21--%20Yuyuan%20roof%20--%3E%3Cpath%20d=%27M-30%20-4Q-14%20-2%20-6%20-16Q0%20-24%206%20-16Q14%20-2%2030%20-4%27/%3E%3Cpath%20d=%27M-24%20-2V22H24V-2%27/%3E%3Cpath%20d=%27M-6%2022V8H6V22M-24%2012h12M12%2012h12%27/%3E%3C/g%3E%3C/g%3E%3Cg%20opacity=%27.12%27%20transform=%27translate(130%20130)%27%3E%3C%21--%20yulan%20magnolia%20--%3E%3Cpath%20d=%27M0%206C-8%20-2%20-6%20-14%200%20-18C6%20-14%208%20-2%200%206ZM-3%206C-14%204%20-16%20-6%20-12%20-12C-6%20-8%20-2%20-2%20-3%206ZM3%206C14%204%2016%20-6%2012%20-12C6%20-8%202%20-2%203%206Z%27/%3E%3C/g%3E%3C/svg%3E"); background-size:260px 260px; background-repeat:repeat}
 
-  /* link to the standalone outfit page (public/outfit.html) */
-  body.theme-ink .outfit-link{display:inline-block;margin:2px 0 10px;padding:6px 14px;border-radius:999px;background:#F64668;color:#fff;font-weight:700;font-size:13px;text-decoration:none}
+  body.theme-ink .tabbar, .tabbar{grid-template-columns:repeat(5,1fr)}  /* 行程 美食 景点 穿搭 注意事项 */
 """
 
 def prune_css(html):
@@ -198,6 +197,31 @@ def apply_v2(h):
     assert 'id="v2"' in h and "classList.toggle('open')" in h
     return h
 
+def add_outfit_tab(h):
+    """穿搭 tab between 景点 and 注意事项: button + panel (outfit/outfit_panel.html) + tab-switch JS patches."""
+    frag = io.open("outfit/outfit_panel.html", encoding="utf-8").read()
+    btn = '<button type="button" class="tab" data-tab="notes"'
+    assert btn in h
+    tab = """<button type="button" class="tab" data-tab="outfit" aria-selected="false">
+      <svg viewBox="0 0 24 24"><path d="M12 4.5a2 2 0 012 2c0 1.2-2 1.6-2 3.2M12 9.7L3.5 15a1.3 1.3 0 00.7 2.4h15.6a1.3 1.3 0 00.7-2.4L12 9.7z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span class="tab-label">穿搭</span>
+    </button>
+    """
+    h = h.replace(btn, tab + btn, 1)
+    pan = '<section class="panel" id="panel-notes"></section>'
+    assert pan in h
+    h = h.replace(pan, '<section class="panel" id="panel-outfit">' + frag + "</section>" + chr(10) + "    " + pan, 1)
+    for old, new in [
+        ('notes: document.getElementById("panel-notes")};', 'notes: document.getElementById("panel-notes"), outfit: document.getElementById("panel-outfit")};'),
+        ('cur==="notes" ? "note-day-" : "sight-day-"', 'cur==="notes" ? "note-day-" : cur==="outfit" ? "outfit-day-" : "sight-day-"'),
+        ('if(name==="food" || name==="sights" || name==="notes") jump(false);', 'if(name==="food" || name==="sights" || name==="notes" || name==="outfit") jump(false);'),
+        ('(cur==="food" || cur==="sights" || cur==="notes")) setTimeout', '(cur==="food" || cur==="sights" || cur==="notes" || cur==="outfit")) setTimeout'),
+    ]:
+        assert old in h, old
+        h = h.replace(old, new, 1)
+    return h
+
+
 tmp = tempfile.NamedTemporaryFile(suffix=".html", delete=False)
 tmp.close()
 subprocess.run([sys.executable, BUILDER, "trip_data.json", tmp.name], check=True, stdout=subprocess.DEVNULL)
@@ -205,13 +229,11 @@ html = io.open(tmp.name, encoding="utf-8").read()
 os.remove(tmp.name)
 block = '<meta name="theme-color" content="#41436A">\n<style id="palette-theme">' + CSS + "</style>\n</head>"
 html = html.replace("</head>", block, 1)
-link = '<p class="sub" id="trip-sub"></p>'
-assert link in html
-html = html.replace(link, link + '<a class="outfit-link" href="outfit.html">👗 每日穿搭</a>', 1)
 before = len(html)
 html = prune_css(html)
 print("pruned CSS:", before - len(html), "bytes removed")
 html = apply_v2(html)
+html = add_outfit_tab(html)
 for out in (OUT, "public/index.html"):
     io.open(out, "w", encoding="utf-8").write(html)
     print("wrote", out, len(html.encode("utf-8")), "bytes")
