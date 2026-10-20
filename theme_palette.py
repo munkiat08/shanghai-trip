@@ -61,6 +61,9 @@ CSS = r"""
   }
 
   body.theme-ink .panels{background-image:url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%27260%27%20height=%27260%27%20viewBox=%270%200%20260%20260%27%20fill=%27none%27%20stroke=%27%2341436A%27%20stroke-width=%271.6%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%3E%3Cg%20opacity=%27.12%27%3E%3Cg%20transform=%27translate(48%2056)%27%3E%3C%21--%20Oriental%20Pearl%20Tower%20--%3E%3Cpath%20d=%27M0%20-50V30%27/%3E%3Ccircle%20cx=%270%27%20cy=%27-22%27%20r=%275%27/%3E%3Ccircle%20cx=%270%27%20cy=%270%27%20r=%279%27%20fill=%27%2341436A%27%20fill-opacity=%27.25%27/%3E%3Ccircle%20cx=%270%27%20cy=%2722%27%20r=%275%27/%3E%3Cpath%20d=%27M-12%2044L-2%2028M12%2044L2%2028M0%2028V44%27/%3E%3C/g%3E%3Cg%20transform=%27translate(190%2056)%27%3E%3C%21--%20xiaolongbao%20--%3E%3Cpath%20d=%27M-20%206Q-22%20-14%200%20-16Q22%20-14%2020%206Q0%2014%20-20%206Z%27%20fill=%27%2341436A%27%20fill-opacity=%27.12%27/%3E%3Cpath%20d=%27M0%20-16V-8M-8%20-14L-5%20-6M8%20-14L5%20-6M-14%20-10L-9%20-3M14%20-10L9%20-3%27/%3E%3Cpath%20d=%27M-8%20-26q-4%20-5%200%20-9M2%20-26q-4%20-5%200%20-9M12%20-26q-4%20-5%200%20-9%27/%3E%3C/g%3E%3Cg%20transform=%27translate(52%20184)%27%3E%3C%21--%20Lujiazui:%20Jin%20Mao%20%2B%20SWFC%20--%3E%3Cpath%20d=%27M-30%2034V-10H-18V-18H-10V-28H-4V34M-30%2034H0%27/%3E%3Cpath%20d=%27M10%2034V-26L24%20-34L30%20-26V34Z%27/%3E%3Cpath%20d=%27M17%20-14L23%20-14L20%20-4Z%27%20fill=%27%2341436A%27%20fill-opacity=%27.3%27/%3E%3C/g%3E%3Cg%20transform=%27translate(190%20180)%27%3E%3C%21--%20Yuyuan%20roof%20--%3E%3Cpath%20d=%27M-30%20-4Q-14%20-2%20-6%20-16Q0%20-24%206%20-16Q14%20-2%2030%20-4%27/%3E%3Cpath%20d=%27M-24%20-2V22H24V-2%27/%3E%3Cpath%20d=%27M-6%2022V8H6V22M-24%2012h12M12%2012h12%27/%3E%3C/g%3E%3C/g%3E%3Cg%20opacity=%27.12%27%20transform=%27translate(130%20130)%27%3E%3C%21--%20yulan%20magnolia%20--%3E%3Cpath%20d=%27M0%206C-8%20-2%20-6%20-14%200%20-18C6%20-14%208%20-2%200%206ZM-3%206C-14%204%20-16%20-6%20-12%20-12C-6%20-8%20-2%20-2%20-3%206ZM3%206C14%204%2016%20-6%2012%20-12C6%20-8%202%20-2%203%206Z%27/%3E%3C/g%3E%3C/svg%3E"); background-size:260px 260px; background-repeat:repeat}
+
+  /* link to the standalone outfit page (public/outfit.html) */
+  body.theme-ink .outfit-link{display:inline-block;margin:2px 0 10px;padding:6px 14px;border-radius:999px;background:#F64668;color:#fff;font-weight:700;font-size:13px;text-decoration:none}
 """
 
 def prune_css(html):
@@ -202,6 +205,9 @@ html = io.open(tmp.name, encoding="utf-8").read()
 os.remove(tmp.name)
 block = '<meta name="theme-color" content="#41436A">\n<style id="palette-theme">' + CSS + "</style>\n</head>"
 html = html.replace("</head>", block, 1)
+link = '<p class="sub" id="trip-sub"></p>'
+assert link in html
+html = html.replace(link, link + '<a class="outfit-link" href="outfit.html">👗 每日穿搭</a>', 1)
 before = len(html)
 html = prune_css(html)
 print("pruned CSS:", before - len(html), "bytes removed")

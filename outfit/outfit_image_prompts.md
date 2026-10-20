@@ -16,6 +16,7 @@
 ## 2. 用法
 
 直接把每天的提示词贴进 Midjourney / ChatGPT 生图 / Gemini / Flux，一张一张生成。要保持 9 张图是同一个人，可以先出第 1 天，满意后把它当参考图，之后每天都带上它。
+第 5 天的提示词里写了更具体的脸型、眼睛和发型描述，生图时一定把第 1 天（或第 7 天）的那张图当参考图一起上传，并说明“和参考图是同一个人”，这样脸才会和其他天一致。
 
 ## 3. 负面提示词
 
@@ -58,7 +59,7 @@ Photorealistic candid travel photo of an East Asian woman (Asian face, natural A
 ### Day 05 · 3/12 拙政园 · 平江路 · 金鸡湖（浅米 / 苔绿 / 雾粉，6–15℃）
 
 ```
-Photorealistic candid travel photo of an East Asian woman (Asian face, natural Asian facial features) with long light-brown hair worn down with soft side-swept bangs, slim proportionate build, 170 cm tall, no glasses, relaxed natural smile. She wears a pale-moss-green knit cardigan over a cream long-sleeve top, a mid-length misty-pink pleated skirt, thin black leggings, light-beige flat sneakers and a thin shawl scarf. Standing on a zigzag corridor bridge in the Humble Administrator's Garden in Suzhou, a lotus pond, pavilion and bare willow branches behind her, soft diffused light, about 11 degrees Celsius. Full-body shot, vertical 3:4, soft natural light, realistic skin and fabric texture, muted film-like color grading, 35mm lens, shallow depth of field
+Photorealistic candid travel photo of the same East Asian woman as in the reference image: Chinese woman in her late twenties, oval face, almond-shaped dark brown eyes with natural double eyelids, soft straight nose, fair warm skin, long straight light-brown (caramel) hair past the shoulders worn down with thin see-through air bangs, slim proportionate build, 170 cm tall, no glasses, warm natural smile showing teeth. She wears a pale-moss-green knit cardigan over a cream long-sleeve top, a mid-length misty-pink pleated skirt, thin black leggings, light-beige flat sneakers, a thin grey shawl over the shoulders and a small green-brown crossbody bag. Standing on a wooden zigzag bridge in the Humble Administrator's Garden in Suzhou, a lotus pond, a curved-roof pavilion and bare willow branches behind her, soft diffused overcast light, about 11 degrees Celsius. Full-body shot, vertical 3:4, realistic skin and fabric texture, muted film-like color grading, 35mm lens, shallow depth of field
 ```
 
 ### Day 06 · 3/13 乌镇西栅 · 汉服体验（浅色汉服 + 外披，5–14℃）
