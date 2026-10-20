@@ -197,6 +197,38 @@ def apply_v2(h):
     assert 'id="v2"' in h and "classList.toggle('open')" in h
     return h
 
+COVER = """
+<div id="cover" role="dialog" aria-label="封面" tabindex="0">
+  <img src="images/cover.webp" alt="2027年3月 江浙沪9天 一路往南走，四座城">
+  <button type="button" id="cover-go">进入行程 →</button>
+</div>
+<style>
+  #cover{position:fixed; inset:0; z-index:1000; background:#EAE8F2; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; cursor:pointer; transition:opacity .35s ease}
+  #cover.hide{opacity:0; pointer-events:none}
+  #cover img{max-width:100%; max-height:calc(100dvh - 92px); width:auto; height:auto; object-fit:contain; display:block}
+  #cover-go{margin-bottom:calc(8px + env(safe-area-inset-bottom)); border:0; border-radius:999px; background:#F64668; color:#fff; font-weight:700; font-size:16px; font-family:inherit; line-height:1; padding:14px 28px; box-shadow:0 6px 18px rgba(65,67,106,.35); cursor:pointer}
+  body.cover-open{overflow:hidden}
+</style>
+<script>
+(function(){
+  var c = document.getElementById("cover"); if(!c) return;
+  document.body.classList.add("cover-open");
+  function close(){ c.classList.add("hide"); document.body.classList.remove("cover-open"); setTimeout(function(){ c.remove(); }, 400); }
+  c.addEventListener("click", close);
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape" || e.key === "Enter") close(); });
+})();
+</script>
+"""
+
+
+def add_cover(h):
+    """Full-screen cover (public/images/cover.webp) shown on open; tap anywhere / button / Esc / Enter to enter."""
+    import re
+    m = re.search(r"<body[^>]*>", h)
+    assert m
+    return h[:m.end()] + COVER + h[m.end():]
+
+
 def add_outfit_tab(h):
     """穿搭 tab between 景点 and 注意事项: button + panel (outfit/outfit_panel.html) + tab-switch JS patches."""
     frag = io.open("outfit/outfit_panel.html", encoding="utf-8").read()
@@ -234,6 +266,7 @@ html = prune_css(html)
 print("pruned CSS:", before - len(html), "bytes removed")
 html = apply_v2(html)
 html = add_outfit_tab(html)
+html = add_cover(html)
 for out in (OUT, "public/index.html"):
     io.open(out, "w", encoding="utf-8").write(html)
     print("wrote", out, len(html.encode("utf-8")), "bytes")

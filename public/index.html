@@ -708,6 +708,9 @@ h1,h2,h3{font-family:'Noto Serif SC','Songti SC',serif; text-wrap:balance; margi
 a{color:inherit}
 .shell{width:100%; max-width:448px; min-height:100vh; background:var(--surface);
     box-shadow:0 0 48px var(--shadow); display:flex; flex-direction:column; position:relative;}
+.trip-cover{width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px; display:block; background:var(--surface-2); cursor:zoom-in}
+@media (min-width:720px){.trip-cover{aspect-ratio:21/9; max-width:640px}}
+.trip-cover + .img-credit{margin:3px 0 4px}
 .head{position:sticky; top:0; z-index:5; background:var(--surface); border-bottom:1px solid var(--line);
     padding:18px 20px 0; }
 .head .eyebrow{font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:600}
@@ -950,6 +953,27 @@ body.theme-ink .tabbar,.tabbar{grid-template-columns:repeat(5,1fr)}</style>
 </style>
 </head>
 <body>
+<div id="cover" role="dialog" aria-label="封面" tabindex="0">
+  <img src="images/cover.webp" alt="2027年3月 江浙沪9天 一路往南走，四座城">
+  <button type="button" id="cover-go">进入行程 →</button>
+</div>
+<style>
+  #cover{position:fixed; inset:0; z-index:1000; background:#EAE8F2; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; cursor:pointer; transition:opacity .35s ease}
+  #cover.hide{opacity:0; pointer-events:none}
+  #cover img{max-width:100%; max-height:calc(100dvh - 92px); width:auto; height:auto; object-fit:contain; display:block}
+  #cover-go{margin-bottom:calc(8px + env(safe-area-inset-bottom)); border:0; border-radius:999px; background:#F64668; color:#fff; font-weight:700; font-size:16px; font-family:inherit; line-height:1; padding:14px 28px; box-shadow:0 6px 18px rgba(65,67,106,.35); cursor:pointer}
+  body.cover-open{overflow:hidden}
+</style>
+<script>
+(function(){
+  var c = document.getElementById("cover"); if(!c) return;
+  document.body.classList.add("cover-open");
+  function close(){ c.classList.add("hide"); document.body.classList.remove("cover-open"); setTimeout(function(){ c.remove(); }, 400); }
+  c.addEventListener("click", close);
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape" || e.key === "Enter") close(); });
+})();
+</script>
+
 <div class="shell">
   <header class="head">
     <p class="eyebrow" id="trip-eyebrow"></p>
@@ -1197,7 +1221,7 @@ function mergeStay(stay, stops){
 
 // Tap a stop photo to see the whole picture full screen; tap again to close.
 document.addEventListener("click", e => {
-  const im = e.target.closest("img.stop-img, img.card-img");
+  const im = e.target.closest("img.stop-img, img.card-img, img.trip-cover");
   if(im){
     const lb = document.createElement("div"); lb.className = "lb";
     lb.innerHTML = '<img alt="">'; lb.firstChild.src = im.src;
@@ -1365,6 +1389,7 @@ function renderItinerary(){
     const stops = mergeStay(d.stay, d.stops);
     return `
     <div class="day-content" data-day-content="${i}" style="${i===0?"":"display:none"}">
+      ${i===0 && TRIP.trip.cover?`<img class="trip-cover" src="${esc(TRIP.trip.cover)}" alt="">${TRIP.trip.cover_credit?`<div class="img-credit">${esc(TRIP.trip.cover_credit)}</div>`:""}`:""}
       ${d.map_image?`<img class="day-map" src="${esc(d.map_image)}" alt="${esc(dayLabel(d.day))}">`:""}
       <p class="day-head">${esc(dayLabel(d.day))}${d.date ? " · " + esc(fmtDate(d.date)) : ""}${d.label ? " · " + esc(d.label) : ""}</p>
       <div class="timeline">
