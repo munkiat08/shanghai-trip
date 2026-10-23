@@ -10,7 +10,22 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path.home() / ".claude" / "skills" / "china-amap-rednote-itinerary" / "scripts"))
 from amap_links import marker_url, search_url, route_url, parse_marker_coords  # noqa: E402
-from external_links import trip_com_search_url, rednote_search_url  # noqa: E402
+from external_links import trip_com_hotel_url, trip_com_search_url as _tc_search, rednote_search_url  # noqa: E402
+
+# Real Trip.com hotelId / cityId, looked up through Trip.com's own search (page titles checked).
+# 乌镇民宿 has no confirmed listing yet, so it stays a keyword search.
+TC_HOTELS = [
+    (("嘉虹", "川沙"), trip_com_hotel_url(427744, 2)),      # SKYBIRD Hotel (Shanghai International Resort - Chuansha Metro Station Store)
+    (("行乐",), trip_com_hotel_url(109882404, 14)),          # Xingle Hotel (Suzhou Guanqian Street Pingjiang Road)
+    (("嘉虹", "杭州"), trip_com_hotel_url(121140488, 17)),   # SKYBIRD Hotel (Hangzhou West Lake Hefang Street)
+]
+
+
+def trip_com_search_url(name):
+    for words, url in TC_HOTELS:
+        if all(w in name for w in words):
+            return url
+    return _tc_search(name)
 
 P = {  # name -> (lon, lat)
     "jh_sh": (121.700798, 31.184477), "pvg": (121.809373, 31.151164),
