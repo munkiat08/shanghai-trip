@@ -131,9 +131,15 @@ V2_CSS = r"""
   body.theme-ink .stop-name.has-mini{padding-right:84px}
   body.theme-ink .stop-mini{position:absolute; top:0; right:0; display:flex; gap:8px}
   body.theme-ink .stop.open .stop-mini{display:none}
-  body.theme-ink .stop-mini a{width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--jade); color:#fff; text-decoration:none}
-  body.theme-ink .stop-mini a.rn{background:var(--accent)}
-  body.theme-ink .stop-mini svg{width:17px; height:17px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+  body.theme-ink a.ico{width:34px; height:34px; min-height:0; padding:0; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; background:var(--jade); color:#fff; text-decoration:none; flex:0 0 auto}
+  body.theme-ink a.ico.rn{background:var(--accent)}
+  body.theme-ink a.ico.tc{background:var(--tc-bg)}
+  body.theme-ink a.ico svg{width:17px; height:17px; margin:0; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+  body.theme-ink .leg a.ico{margin-left:auto; width:32px; height:32px}
+  body.theme-ink .leg{flex-wrap:nowrap; align-items:center}
+  body.theme-ink .leg-text{flex:1 1 auto; min-width:0}
+  body.theme-ink .group-steps a.ico{width:28px; height:28px; margin-left:6px; vertical-align:middle}
+  body.theme-ink .group-head .row-actions{margin-top:8px}
   /* v2 — 2. calm cards, more air */
   body.theme-ink .panels{padding:20px 22px 104px}
   body.theme-ink .timeline{gap:28px}
@@ -148,20 +154,31 @@ V2_CSS = r"""
   body.theme-ink .day-head{font-size:19px; margin:26px 0 12px}
 """
 V2_JS = """<script>document.addEventListener('click',e=>{if(e.target.closest('.stop-mini'))return;const n=e.target.closest('.stop-name,.stop-time');if(n)n.closest('.stop').classList.toggle('open')})</script>"""
-# small icon-only 高德 / 小红书搜索 buttons at the right of each place name (itinerary tab); the big buttons show when the stop is opened
+# every button in the itinerary tab is a small round icon: stop links sit at the right of the place name (the big labelled buttons show when the stop is opened),
+# route / 导航 / 来源 buttons inside legs and groups are the same round icons
 V2_JS += r"""<script>(function(){
-  var MAP='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>';
-  var SEARCH='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>';
-  document.querySelectorAll('#panel-itinerary .stop').forEach(function(st){
+  var ICON={
+    map:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>',
+    search:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>',
+    route:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>',
+    ext:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h5"/></svg>'
+  };
+  function icon(a,svg,label,cls){ a.innerHTML=svg; a.title=label; a.setAttribute('aria-label',label); a.classList.add('ico'); if(cls) a.classList.add(cls); }
+  var panel=document.getElementById('panel-itinerary');
+  panel.querySelectorAll('.stop').forEach(function(st){
     var name=st.querySelector('.stop-name'), acts=st.querySelector(':scope > .row-actions'); if(!name||!acts) return;
+    var box=document.createElement('div'), n=0; box.className='stop-mini';
+    function mk(a,svg,label,cls){ var m=document.createElement('a'); m.href=a.getAttribute('href'); m.target='_blank'; m.rel='noreferrer'; icon(m,svg,label,cls); box.appendChild(m); n++; }
     var amap=acts.querySelector('a[href*="uri.amap.com"]:not(.rn):not(.trip)'), rn=acts.querySelector('a.rn');
-    if(!amap&&!rn) return;
-    var box=document.createElement('div'); box.className='stop-mini';
-    function mk(a,icon,label,cls){ var m=document.createElement('a'); m.href=a.getAttribute('href'); m.target='_blank'; m.rel='noreferrer'; m.title=label; m.setAttribute('aria-label',label); m.className=cls||''; m.innerHTML=icon; box.appendChild(m); }
-    if(amap) mk(amap,MAP,'高德地图');
-    if(rn) mk(rn,SEARCH,'小红书搜索','rn');
-    name.classList.add('has-mini'); name.appendChild(box);
+    if(amap) mk(amap,ICON.map,'高德地图');
+    if(rn) mk(rn,ICON.search,'小红书搜索','rn');
+    acts.querySelectorAll('a.trip').forEach(function(a){ mk(a,ICON.ext,(a.textContent||'').trim()||'Trip.com','tc'); });
+    if(!n) return;
+    name.classList.add('has-mini'); name.style.paddingRight=(n*42+4)+'px'; name.appendChild(box);
   });
+  panel.querySelectorAll('.leg a.amap-btn').forEach(function(a){ icon(a,ICON.route,'路线'); });
+  panel.querySelectorAll('.group-steps a.amap-btn').forEach(function(a){ icon(a,ICON.map,'导航'); });
+  panel.querySelectorAll('.group-head .row-actions a.rn').forEach(function(a){ icon(a,ICON.search,'小红书来源','rn'); });
 })();</script>"""
 
 V2_JS += r"""<script>(function(){
