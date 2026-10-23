@@ -125,7 +125,15 @@ V2_CSS = r"""
   body.theme-ink .stop.open .stop-time::after{content:"▴"}
   body.theme-ink .stop-name .en{display:block; margin:2px 0 0; font-size:12.5px; font-weight:400}
   body.theme-ink .stop:not(.open) .tip{display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
-  body.theme-ink .stop:not(.open) .row-actions .amap-btn.rn{display:none}
+  /* collapsed: big buttons hidden, small icon buttons (高德 / 小红书搜索) at the right of the place name; open: the reverse */
+  body.theme-ink .stop:not(.open) > .row-actions{display:none}
+  body.theme-ink .stop-name{position:relative}
+  body.theme-ink .stop-name.has-mini{padding-right:84px}
+  body.theme-ink .stop-mini{position:absolute; top:0; right:0; display:flex; gap:8px}
+  body.theme-ink .stop.open .stop-mini{display:none}
+  body.theme-ink .stop-mini a{width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--jade); color:#fff; text-decoration:none}
+  body.theme-ink .stop-mini a.rn{background:var(--accent)}
+  body.theme-ink .stop-mini svg{width:17px; height:17px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
   /* v2 — 2. calm cards, more air */
   body.theme-ink .panels{padding:20px 22px 104px}
   body.theme-ink .timeline{gap:28px}
@@ -139,7 +147,22 @@ V2_CSS = r"""
     font-family:'PingFang SC','Microsoft YaHei','Noto Sans SC','Helvetica Neue',sans-serif; font-weight:700}
   body.theme-ink .day-head{font-size:19px; margin:26px 0 12px}
 """
-V2_JS = """<script>document.addEventListener('click',e=>{const n=e.target.closest('.stop-name,.stop-time');if(n)n.closest('.stop').classList.toggle('open')})</script>"""
+V2_JS = """<script>document.addEventListener('click',e=>{if(e.target.closest('.stop-mini'))return;const n=e.target.closest('.stop-name,.stop-time');if(n)n.closest('.stop').classList.toggle('open')})</script>"""
+# small icon-only 高德 / 小红书搜索 buttons at the right of each place name (itinerary tab); the big buttons show when the stop is opened
+V2_JS += r"""<script>(function(){
+  var MAP='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>';
+  var SEARCH='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>';
+  document.querySelectorAll('#panel-itinerary .stop').forEach(function(st){
+    var name=st.querySelector('.stop-name'), acts=st.querySelector(':scope > .row-actions'); if(!name||!acts) return;
+    var amap=acts.querySelector('a[href*="uri.amap.com"]:not(.rn):not(.trip)'), rn=acts.querySelector('a.rn');
+    if(!amap&&!rn) return;
+    var box=document.createElement('div'); box.className='stop-mini';
+    function mk(a,icon,label,cls){ var m=document.createElement('a'); m.href=a.getAttribute('href'); m.target='_blank'; m.rel='noreferrer'; m.title=label; m.setAttribute('aria-label',label); m.className=cls||''; m.innerHTML=icon; box.appendChild(m); }
+    if(amap) mk(amap,MAP,'高德地图');
+    if(rn) mk(rn,SEARCH,'小红书搜索','rn');
+    name.classList.add('has-mini'); name.appendChild(box);
+  });
+})();</script>"""
 
 V2_JS += r"""<script>(function(){
   var COL=['#b8402f','#2b6f5e','#3a5f9c','#7a3d8f','#c26a1b'], LF=window.L, built=false;
