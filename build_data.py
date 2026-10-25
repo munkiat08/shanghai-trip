@@ -13,11 +13,11 @@ from amap_links import marker_url, search_url, route_url, parse_marker_coords  #
 from external_links import trip_com_hotel_url, trip_com_search_url as _tc_search, rednote_search_url  # noqa: E402
 
 # Real Trip.com hotelId / cityId, looked up through Trip.com's own search (page titles checked).
-# 乌镇民宿 has no confirmed listing yet, so it stays a keyword search.
 TC_HOTELS = [
     (("嘉虹", "川沙"), trip_com_hotel_url(427744, 2)),      # SKYBIRD Hotel (Shanghai International Resort - Chuansha Metro Station Store)
     (("行乐",), trip_com_hotel_url(109882404, 14)),          # Xingle Hotel (Suzhou Guanqian Street Pingjiang Road)
     (("嘉虹", "杭州"), trip_com_hotel_url(121140488, 17)),   # SKYBIRD Hotel (Hangzhou West Lake Hefang Street)
+    (("乌镇",), trip_com_hotel_url(1647104, 580)),           # Wuzhen Guest House (Tongxiang), hotelId from the booking link
 ]
 
 
